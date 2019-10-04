@@ -46,7 +46,7 @@ public class SensorHistoricalDAO extends DAO<SensorHistorical> {
 
 	/**
 	 * Convert the JSON string in Object and create a request to insert values in
-	 * table 'historique' return a boolean
+	 * table 'historical' return a boolean
 	 */
 	@Override
 	public boolean create(String jsonString) {
@@ -74,7 +74,7 @@ public class SensorHistoricalDAO extends DAO<SensorHistorical> {
 
 	/**
 	 * Convert the JSON string in Object and create a request to delete values in
-	 * table 'historique' return a boolean
+	 * table 'historical' return a boolean
 	 */
 	@Override
 	public boolean delete(String jsonString) {
@@ -96,7 +96,7 @@ public class SensorHistoricalDAO extends DAO<SensorHistorical> {
 
 	/**
 	 * Convert the JSON string in Object and create a request to update values in
-	 * table 'historique' return a boolean
+	 * table 'historical' return a boolean
 	 */
 	@Override
 	public boolean update(String jsonString) {
@@ -124,7 +124,7 @@ public class SensorHistoricalDAO extends DAO<SensorHistorical> {
 
 	/**
 	 * Convert the JSON string in Object and create a request to read (select)
-	 * values in table 'historique' return a JSON string
+	 * values in table 'historical' return a JSON string
 	 */
 	@Override
 	public String read(String jsonString) {
@@ -152,7 +152,7 @@ public class SensorHistoricalDAO extends DAO<SensorHistorical> {
 
 	/**
 	 * Convert the JSON string in Object and create a request to read (select) all
-	 * values in table 'historique' return a JSON string
+	 * values in table 'historical' return a JSON string
 	 */
 	@Override
 	public String readAll(String jsonString) {
@@ -178,7 +178,7 @@ public class SensorHistoricalDAO extends DAO<SensorHistorical> {
 
 	/**
 	 * Convert the JSON string in Object and create a request to read (select) all
-	 * values in table 'historique' by the id of commonArea or the type of sensor or
+	 * values in table 'historical' by the id of commonArea or the type of sensor or
 	 * the state of sensor
 	 * 
 	 * @param jsonString
@@ -207,7 +207,7 @@ public class SensorHistoricalDAO extends DAO<SensorHistorical> {
 	}
 
 	/**
-	 * Execute the request send by the BIAlalysis GUI
+	 * Execute the request send by the Analysis GUI
 	 * 
 	 * @return
 	 */
