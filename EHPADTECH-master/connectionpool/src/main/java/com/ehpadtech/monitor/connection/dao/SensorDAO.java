@@ -23,7 +23,7 @@ import com.ehpadtech.monitor.commons.entity.SensorHistorical;
 import com.ehpadtech.monitor.commons.entity.SensorType;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
+    
 
 public class SensorDAO extends DAO<Sensor> {
 
