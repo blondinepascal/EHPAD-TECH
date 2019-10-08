@@ -147,7 +147,7 @@ public class Connexion extends JFrame {
 					}
 					if (!employee.getFunction().equals("")) {
 						frame = new Frame(employee.getIdEmployee());
-						setVisible(false);
+						setVisible(true);
 						dispose();
 						frame.setVisible(true);
 						logger.log(Level.DEBUG, "Connection succesfuly accepted, redirection to Window");

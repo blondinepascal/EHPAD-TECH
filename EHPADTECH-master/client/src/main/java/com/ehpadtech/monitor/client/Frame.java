@@ -78,17 +78,7 @@ public class Frame extends JFrame {
 			}
 		}));
 
-		/**
-		 * LOGO
-		 */
-		logger.log(Level.INFO, "______           _   _     _    _         ");
-		logger.log(Level.INFO, "|  _  \\         | | | |   | |  (_)        ");
-		logger.log(Level.INFO, "| | | |___  __ _| |_| |__ | | ___ ___ ___ ");
-		logger.log(Level.INFO, "| | | / _ \\/ _` | __| '_ \\| |/ / / __/ __|");
-		logger.log(Level.INFO, "| |/ /  __/ (_| | |_| | | |   <| \\__ \\__ \\");
-		logger.log(Level.INFO, "|___/ \\___|\\__,_|\\__|_| |_|_|\\_\\_|___/___/");
-		logger.log(Level.INFO, "                                          ");
-
+		
 		/**
 		 * Creation of different tabs
 		 */
@@ -158,7 +148,7 @@ public class Frame extends JFrame {
 		/**
 		 * Different parameters of the window
 		 */
-		this.setTitle("Deathkiss");
+		this.setTitle("Ehpadtech");
 		this.setSize((int) getToolkit().getScreenSize().getWidth(), (int) getToolkit().getScreenSize().getHeight());
 		this.setLocationRelativeTo(null);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
