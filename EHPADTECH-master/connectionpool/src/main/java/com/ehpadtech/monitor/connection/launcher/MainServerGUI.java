@@ -1,5 +1,6 @@
 package com.ehpadtech.monitor.connection.launcher;
 
+import java.awt.Color;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -102,43 +103,7 @@ public class MainServerGUI extends JFrame {
 		 * Button to invoke the method who create a socket accept who block all the
 		 * connection but accept the socket
 		 */
-		launchFake = new JButton("Launch cheated server");
-		launchFake.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				ts.load();
-				if (nbServer == 0) {
-
-					ts.openFake();
-					nbServer++;
-					logger.log(Level.INFO, "Server Initialized");
-
-					/**
-					 * Creation of Timer to know how many time the server was launch
-					 */
-					int delais = 1000;
-					tache_timer = new ActionListener() {
-						public void actionPerformed(ActionEvent e1) {
-							seconde++;
-							if (seconde == 60) {
-								seconde = 0;
-								minute++;
-							}
-							if (minute == 60) {
-								minute = 0;
-								hour++;
-							}
-							time.setText(hour + ":" + minute + ":" + seconde);
-						}
-					};
-					timer1 = new Timer(delais, tache_timer);
-					timer1.start();
-					ts.treatment();
-				} else {
-					logger.log(Level.INFO, "Server already launch");
-				}
-			}
-		});
+		
 
 		/**
 		 * Create a button to stop the server
@@ -164,9 +129,9 @@ public class MainServerGUI extends JFrame {
 		 * Add the buttons to container
 		 */
 		container.add(launch);
-		container.add(launchFake);
 		container.add(stop);
 		container.add(time);
+		container.setBackground(Color.PINK);
 
 		/**
 		 * Define the frame
