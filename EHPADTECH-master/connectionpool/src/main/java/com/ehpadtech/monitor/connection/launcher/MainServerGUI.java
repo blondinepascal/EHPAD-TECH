@@ -60,7 +60,7 @@ public class MainServerGUI extends JFrame {
 		/**
 		 * Button who invoke the normal method who give one connection to one socket
 		 */
-		launch = new JButton("Launch server");
+		launch = new JButton("Start server");
 		launch.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -108,7 +108,7 @@ public class MainServerGUI extends JFrame {
 		/**
 		 * Create a button to stop the server
 		 */
-		stop = new JButton("Shutdown server");
+		stop = new JButton("Stop server");
 		stop.addActionListener(new ActionListener() {
 			/**
 			 * Stop the server, stop the timer and set the number to server launch to 0
@@ -119,7 +119,7 @@ public class MainServerGUI extends JFrame {
 					ts.close();
 					timer1.stop();
 					nbServer = 0;
-					logger.log(Level.INFO, "Server Closed");
+					logger.log(Level.INFO, "Server Stoped");
 					logger.log(Level.INFO, "Application closed");
 				}
 			}
