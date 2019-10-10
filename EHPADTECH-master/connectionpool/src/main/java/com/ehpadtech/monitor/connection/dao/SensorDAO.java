@@ -242,7 +242,7 @@ public class SensorDAO extends DAO<Sensor> {
 	}
 
 	/**
-	 * Execute the request send by the BIAlalysis GUI
+	 * Execute the request send by the Analysis GUI
 	 * 
 	 * @return
 	 */
