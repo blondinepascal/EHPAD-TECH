@@ -31,7 +31,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class RequestHandler implements Runnable {
 
 	/**
-	 * Initialization of diferents parameters
+	 * Initialization of differents parameters
 	 */
 	private Socket sock;
 	private PrintWriter writer = null;
