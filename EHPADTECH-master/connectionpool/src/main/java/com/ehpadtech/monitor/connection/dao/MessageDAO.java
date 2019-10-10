@@ -157,7 +157,7 @@ public class MessageDAO extends DAO<Message> {
 	}
 
 	/**
-	 * Execute the request send by the BIAlalysis GUI
+	 * Execute the request send by the Analysis GUI
 	 * 
 	 * @return
 	 */
