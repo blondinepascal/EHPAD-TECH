@@ -82,13 +82,13 @@ public class Frame extends JFrame {
 		/**
 		 * Creation of different tabs
 		 */
-		tabEmployes = new TabEmployes(Color.GRAY, this.idEmployee, "Tab Employees");
-		tabCommonArea = new TabCommonArea(Color.GRAY, this.idEmployee, -1, "Tab Common Areas");
-		tabSensor = new TabSensor(Color.GRAY, this.idEmployee, "Tab Sensors", 0);
-		tabResident = new TabResident(Color.GRAY, this.idEmployee, "Tab Residents");
-		tabHistorical = new TabHistorical(Color.GRAY, this.idEmployee, "Tab Historical");
-		tabProfile = new TabProfile(Color.GRAY, this.idEmployee, "Tab Profile");
-		tabMapSensor = new TabMapSensor(Color.GRAY, this.idEmployee, "Tab Map", 0);
+		tabEmployes = new TabEmployes(Color.PINK, this.idEmployee, "Tab Employees");
+		tabCommonArea = new TabCommonArea(Color.PINK, this.idEmployee, -1, "Tab Common Areas");
+		tabSensor = new TabSensor(Color.PINK, this.idEmployee, "Tab Sensors", 0);
+		tabResident = new TabResident(Color.PINK, this.idEmployee, "Tab Residents");
+		tabHistorical = new TabHistorical(Color.PINK, this.idEmployee, "Tab Historical");
+		tabProfile = new TabProfile(Color.PINK, this.idEmployee, "Tab Profile");
+		tabMapSensor = new TabMapSensor(Color.PINK, this.idEmployee, "Tab Map", 0);
 
 		/**
 		 * Add of the title of tabs
@@ -102,10 +102,10 @@ public class Frame extends JFrame {
 		tab.add("Tab " + tabOfTab[0], tabEmployes);
 		tab.add("Tab " + tabOfTab[1], tabCommonArea);
 		tab.add("Tab " + tabOfTab[2], tabSensor);
-		tab.add("Tab " + tabOfTab[3], tabResident);
+		//tab.add("Tab " + tabOfTab[3], tabResident);
 		tab.add("Tab " + tabOfTab[4], tabHistorical);
-		tab.add("Tab " + tabOfTab[5], tabProfile);
-		tab.add("Tab " + tabOfTab[6], tabMapSensor);
+		//tab.add("Tab " + tabOfTab[5], tabProfile);
+		//tab.add("Tab " + tabOfTab[6], tabMapSensor);
 
 		///////////////////////// ALERT/////////////////////////////////////////////////
 		setThreadAlert(new Thread(new Runnable() {
@@ -137,11 +137,11 @@ public class Frame extends JFrame {
 		// TODO Modify the thread to decomment
 		// threadAlert.start();
 		threadFrame.start();
-		tabCommonArea.threadLauncher();
+		//tabCommonArea.threadLauncher();
 		tabEmployes.threadLauncher();
 		tabHistorical.threadLauncher();
-		tabProfile.threadLauncher();
-		tabResident.threadLauncher();
+		//tabProfile.threadLauncher();
+		//tabResident.threadLauncher();
 		tabSensor.threadLauncher();
 
 		///////////////////////// FRAME/////////////////////////////////////////////////

@@ -147,9 +147,10 @@ public class Connexion extends JFrame {
 					}
 					if (!employee.getFunction().equals("")) {
 						frame = new Frame(employee.getIdEmployee());
-						setVisible(true);
+						setVisible(false);
 						dispose();
 						frame.setVisible(true);
+						
 						logger.log(Level.DEBUG, "Connection succesfuly accepted, redirection to Window");
 					} else {
 						logger.log(Level.INFO, "Attempt of connection with wrong password employee or id employee");
