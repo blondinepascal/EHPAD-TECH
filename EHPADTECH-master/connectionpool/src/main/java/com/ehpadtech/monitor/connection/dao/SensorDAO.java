@@ -61,6 +61,7 @@ public class SensorDAO extends DAO<Sensor> {
 		try {
 			currentDate = Calendar.getInstance(Locale.FRENCH);
 			sensor = objectMapper.readValue(jsonString, Sensor.class);
+			System.out.println("données en cours de serialisation");
 			prepareStatement = con.prepareStatement(
 					"INSERT INTO capteur (type_capteur, etat, id_partie_commune,type_alert,sensibilite,heure_debut,heure_fin,seuil_min,mise_a_jour,seuil_max) values (?,?,?,?,?,?,?,?,?,?)");
 			prepareStatement.setString(1, sensor.getTypeSensor().name());
@@ -78,6 +79,7 @@ public class SensorDAO extends DAO<Sensor> {
 			prepareStatement.setTimestamp(9, new java.sql.Timestamp(currentDate.getTime().getTime()));
 			prepareStatement.setInt(10, sensor.getThresholdMax());
 			result = prepareStatement.execute();
+			System.out.println("données sérialisées");
 			logger.log(Level.DEBUG, "Sensor succesfully inserted in BDD");
 		} catch (IOException | SQLException e) {
 			logger.log(Level.WARN, "Impossible to insert sensor datas in BDD" + e.getClass().getCanonicalName());
@@ -95,11 +97,13 @@ public class SensorDAO extends DAO<Sensor> {
 		ObjectMapper objectMapper = new ObjectMapper();
 		try {
 			sensor = objectMapper.readValue(jsonString, Sensor.class);
+			System.out.println("données en cours de sérialisation");
 			requestSB = new StringBuilder("DELETE FROM capteur where id_capteur=");
 			requestSB.append(sensor.getIdSensor());
 			st = con.createStatement();
 			result = st.execute(requestSB.toString());
 			logger.log(Level.DEBUG, "Sensor succesfully deleted in BDD");
+			System.out.println("données sérialisées");
 		} catch (SQLException | IOException e) {
 			logger.log(Level.WARN, "Impossible to delete sensor data in BDD" + e.getClass().getCanonicalName());
 		}
@@ -116,6 +120,7 @@ public class SensorDAO extends DAO<Sensor> {
 		ObjectMapper objectMapper = new ObjectMapper();
 		try {
 			currentDate = Calendar.getInstance(Locale.FRENCH);
+			System.out.println("données en cours de sérialisation");
 			sensor = objectMapper.readValue(jsonString, Sensor.class);
 			prepareStatement = con.prepareStatement(
 					"UPDATE capteur SET id_partie_commune = ?,type_capteur = ?,type_alert= ?,sensibilite= ?,heure_debut= ?,heure_fin= ?,seuil_min= ?,seuil_max= ?,mise_a_jour= ?,etat= ?  where id_capteur = ?");
@@ -135,6 +140,7 @@ public class SensorDAO extends DAO<Sensor> {
 			prepareStatement.setInt(11, sensor.getIdSensor());
 			result = prepareStatement.execute();
 			logger.log(Level.DEBUG, "Sensor succesfully update in BDD");
+			System.out.println("données sérialisées");
 
 			sensorHistorical = new SensorHistorical();
 			sensorHistorical.setIdSensor(sensor.getIdSensor());
