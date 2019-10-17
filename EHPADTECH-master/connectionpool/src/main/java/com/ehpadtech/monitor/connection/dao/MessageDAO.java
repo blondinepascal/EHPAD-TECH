@@ -51,12 +51,14 @@ public class MessageDAO extends DAO<Message> {
 		ObjectMapper objectMapper = new ObjectMapper();
 		try {
 			mess = objectMapper.readValue(jsonString, Message.class);
+			System.out.println("DATA SERIALISATION IN PROGRESS");
 			prepareStatement = con
 					.prepareStatement("INSERT INTO message (id_capteur,date_alerte,seuil) values (?,?,?)");
 			prepareStatement.setInt(1, mess.getIdSensor());
 			prepareStatement.setTimestamp(2, new java.sql.Timestamp(mess.getAlertDate().getTime()));
 			prepareStatement.setInt(3, mess.getThreshold());
 			result = prepareStatement.execute();
+			System.out.println("DATA SERIALISED");
 			logger.log(Level.DEBUG, "Message succesfully inserted in BDD ");
 		} catch (IOException | SQLException e) {
 			logger.log(Level.WARN, "Impossible to insert message datas in BDD " + e.getClass().getCanonicalName());
@@ -116,15 +118,20 @@ public class MessageDAO extends DAO<Message> {
 		ObjectMapper objectMapper = new ObjectMapper();
 		try {
 			mess = objectMapper.readValue(jsonString, Message.class);
+			System.out.println("DATA SERIALISATION IN PROGRESS");
 			requestSB = new StringBuilder("SELECT id_message,id_capteur,date_alerte,seuil FROM message ");
 			requestSB.append("FROM message where id_message=");
+			System.out.println("DATA SERIALISED");
 			requestSB.append(mess.getIdMessage());
 			st = con.createStatement();
 			result = st.executeQuery(requestSB.toString());
 			result.next();
 			convertDatas(result);
+			
 			jsonString = objWriter.writeValueAsString(message);
+			System.out.println("DATA DESERIALISATION IN PROGRESS");
 			logger.log(Level.DEBUG, "Message succesfully find in BDD");
+			System.out.println("DATA DESERIALISED");
 		} catch (SQLException | IOException | ParseException e) {
 			logger.log(Level.WARN, "Impossible to get message datas from BDD " + e.getClass().getCanonicalName());
 			jsonString = "ERROR";
@@ -148,7 +155,9 @@ public class MessageDAO extends DAO<Message> {
 				listMessage.add(message);
 			}
 			jsonString = objectMapper.writeValueAsString(listMessage);
+			System.out.println("DATA DESERIALISATION IN PROGRESS");
 			logger.log(Level.DEBUG, "Message succesfully find in BDD");
+			System.out.println("DATA DESERIALISED");
 		} catch (SQLException | IOException | ParseException e) {
 			logger.log(Level.WARN, "Impossible to get messages datas from BDD " + e.getClass().getCanonicalName());
 			jsonString = "ERROR";
