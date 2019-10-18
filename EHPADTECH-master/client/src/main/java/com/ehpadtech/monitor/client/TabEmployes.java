@@ -128,7 +128,7 @@ public class TabEmployes extends JPanel {
 		 * Definition of the structure of this tab
 		 */
 		bar = new JPanel();
-		bar.setBackground(Color.DARK_GRAY);
+		bar.setBackground(Color.PINK);
 		bar.setPreferredSize(new Dimension((int) getToolkit().getScreenSize().getWidth(), 80));
 		bar.setLayout(new BorderLayout());
 		bar.setBorder(BorderFactory.createMatteBorder(20, 100, 20, 100, bar.getBackground()));
@@ -164,7 +164,7 @@ public class TabEmployes extends JPanel {
 		 * Definition of the panel Search
 		 */
 		search = new JPanel();
-		search.setBackground(Color.DARK_GRAY);
+		search.setBackground(Color.PINK);
 		search.setBorder(BorderFactory.createMatteBorder(0, 25, 0, 25, bar.getBackground()));
 		bar.add(search);
 
@@ -598,7 +598,7 @@ public class TabEmployes extends JPanel {
 										+ e1.getClass().getCanonicalName());
 							}
 						} else {
-							JOptionPane.showMessageDialog(null, "Isouuuuuuu", "Error, Wrong password",
+							JOptionPane.showMessageDialog(null, "nulllllllllllll", "Error, Wrong password",
 									JOptionPane.ERROR_MESSAGE);
 						}
 					} else {

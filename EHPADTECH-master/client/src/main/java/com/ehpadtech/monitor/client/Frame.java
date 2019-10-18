@@ -26,9 +26,9 @@ public class Frame extends JFrame {
 	private static JTabbedPane tab;
 	private TabEmployes tabEmployes;
 	private TabCommonArea tabCommonArea;
-	private TabSensor tabSensor;
+	private TabSensor Sensors;
 	private TabResident tabResident;
-	private TabHistorical tabHistorical;
+	private TabHistorical Historical;
 	private TabProfile tabProfile;
 	private TabMapSensor tabMapSensor;
 	private int idEmployee;
@@ -82,11 +82,11 @@ public class Frame extends JFrame {
 		/**
 		 * Creation of different tabs
 		 */
-		tabEmployes = new TabEmployes(Color.PINK, this.idEmployee, "Tab Employees");
+		Sensors = new TabSensor(Color.PINK, this.idEmployee, "Sensors", 0);
+		Historical = new TabHistorical(Color.PINK, this.idEmployee, "Historical");
+		tabEmployes = new TabEmployes(Color.PINK, this.idEmployee, "Employees");
 		tabCommonArea = new TabCommonArea(Color.PINK, this.idEmployee, -1, "Tab Common Areas");
-		tabSensor = new TabSensor(Color.PINK, this.idEmployee, "Tab Sensors", 0);
 		tabResident = new TabResident(Color.PINK, this.idEmployee, "Tab Residents");
-		tabHistorical = new TabHistorical(Color.PINK, this.idEmployee, "Tab Historical");
 		tabProfile = new TabProfile(Color.PINK, this.idEmployee, "Tab Profile");
 		tabMapSensor = new TabMapSensor(Color.PINK, this.idEmployee, "Tab Map", 0);
 
@@ -94,16 +94,16 @@ public class Frame extends JFrame {
 		 * Add of the title of tabs
 		 */
 		tab = new JTabbedPane();
-		String tabOfTab[] = { "Employees", "Common Areas", "Sensors", "Residents", "Historical", "Profile", "Map" };
+		String tabOfTab[] = {"Sensors","Historical","Employees", "Common Areas","Residents", "Profile", "Map"};
 
 		/**
 		 * Add of tabs on the window
 		 */
-		tab.add("Tab " + tabOfTab[0], tabEmployes);
-		tab.add("Tab " + tabOfTab[1], tabCommonArea);
-		tab.add("Tab " + tabOfTab[2], tabSensor);
+		tab.add(tabOfTab[0], Sensors);
+		tab.add(tabOfTab[1], Historical);
+		//tab.add("Tab " + tabOfTab[2], tabEmployes);
 		//tab.add("Tab " + tabOfTab[3], tabResident);
-		tab.add("Tab " + tabOfTab[4], tabHistorical);
+		//tab.add("Tab " + tabOfTab[4], tabCommonArea);
 		//tab.add("Tab " + tabOfTab[5], tabProfile);
 		//tab.add("Tab " + tabOfTab[6], tabMapSensor);
 
@@ -135,14 +135,15 @@ public class Frame extends JFrame {
 		 * Launch the threads
 		 */
 		// TODO Modify the thread to decomment
-		// threadAlert.start();
+		//threadAlert.start();
 		threadFrame.start();
-		//tabCommonArea.threadLauncher();
-		tabEmployes.threadLauncher();
-		tabHistorical.threadLauncher();
+		Sensors.threadLauncher();
+		Historical.threadLauncher();
+	    //tabCommonArea.threadLauncher();
+		//tabEmployes.threadLauncher();
 		//tabProfile.threadLauncher();
 		//tabResident.threadLauncher();
-		tabSensor.threadLauncher();
+		
 
 		///////////////////////// FRAME/////////////////////////////////////////////////
 		/**
@@ -172,7 +173,7 @@ public class Frame extends JFrame {
 			new ClientSocket(requestType, jsonString, table);
 			jsonString = ClientSocket.getJson();
 			employee = objectMapper.readValue(jsonString, Employee.class);
-			logger.log(Level.DEBUG, "Find Employee data succed");
+			logger.log(Level.DEBUG, "Find Employee data succeed");
 		} catch (Exception e1) {
 			logger.log(Level.WARN, "Impossible to parse in JSON Employee datas " + e1.getClass().getCanonicalName());
 		}
@@ -192,7 +193,7 @@ public class Frame extends JFrame {
 			jsonString = ClientSocket.getJson();
 			Alert[] alerts = objectMapper.readValue(jsonString, Alert[].class);
 			listAlert = Arrays.asList(alerts);
-			logger.log(Level.DEBUG, "Find Alerts datas succed");
+			logger.log(Level.DEBUG, "Find Alerts datas succeed");
 		} catch (Exception e1) {
 			logger.log(Level.WARN, "Impossible to parse in JSON Alerts datas " + e1.getClass().getCanonicalName());
 		}

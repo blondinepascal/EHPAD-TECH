@@ -107,7 +107,7 @@ public class TabListSensor extends JPanel {
 		 * Definition of the structure of this tab
 		 */
 		bar = new JPanel();
-		bar.setBackground(Color.DARK_GRAY);
+		bar.setBackground(Color.BLUE);
 		bar.setPreferredSize(new Dimension((int) getToolkit().getScreenSize().getWidth(), 80));
 		bar.setLayout(new BorderLayout());
 		bar.setBorder(BorderFactory.createMatteBorder(20, 100, 20, 100, bar.getBackground()));
@@ -189,7 +189,7 @@ public class TabListSensor extends JPanel {
 					tab = Frame.getTab();
 
 					tab.remove(2);
-					tabSensor = new TabSensor(Color.GRAY, idemployee, "Tab Sensors", index);
+					tabSensor = new TabSensor(Color.BLUE, idemployee, "Tab Sensors", index);
 					tab.add(tabSensor, 2);
 					tab.setTitleAt(2, "Tab Sensors");
 					Frame.goToTab(2);
@@ -223,8 +223,8 @@ public class TabListSensor extends JPanel {
 		 * Different parameters of the window
 		 */
 		this.setLayout(new BorderLayout());
-		this.add(bar, BorderLayout.NORTH);
-		this.setBackground(Color.GRAY);
+		this.add(bar, BorderLayout.SOUTH);
+		this.setBackground(Color.BLUE);
 	}
 
 	/**

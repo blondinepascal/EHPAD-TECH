@@ -1,6 +1,7 @@
 package com.ehpadtech.monitor.connection.dao;
 
 import java.io.IOException;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -21,7 +22,10 @@ import com.ehpadtech.monitor.commons.entity.Sensitivity;
 import com.ehpadtech.monitor.commons.entity.Sensor;
 import com.ehpadtech.monitor.commons.entity.SensorHistorical;
 import com.ehpadtech.monitor.commons.entity.SensorType;
+import com.fasterxml.jackson.core.JsonFactory;
+import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;
 import com.fasterxml.jackson.databind.ObjectMapper;
     
 
@@ -58,10 +62,15 @@ public class SensorDAO extends DAO<Sensor> {
 	public boolean create(String jsonString) {
 		boolean result = false;
 		ObjectMapper objectMapper = new ObjectMapper();
+		
 		try {
 			currentDate = Calendar.getInstance(Locale.FRENCH);
 			sensor = objectMapper.readValue(jsonString, Sensor.class);
-			System.out.println("DATA DESERIALISATION IN PROGRESS");
+			JsonFactory jsonFactory = new JsonFactory();
+			JsonGenerator jsonGenerator = jsonFactory.createGenerator(System.out);
+			jsonGenerator.setPrettyPrinter(new DefaultPrettyPrinter());
+			jsonGenerator.setCodec(objectMapper);
+			
 			prepareStatement = con.prepareStatement(
 					"INSERT INTO capteur (type_capteur, etat, id_partie_commune,type_alert,sensibilite,heure_debut,heure_fin,seuil_min,mise_a_jour,seuil_max) values (?,?,?,?,?,?,?,?,?,?)");
 			prepareStatement.setString(1, sensor.getTypeSensor().name());
@@ -79,7 +88,14 @@ public class SensorDAO extends DAO<Sensor> {
 			prepareStatement.setTimestamp(9, new java.sql.Timestamp(currentDate.getTime().getTime()));
 			prepareStatement.setInt(10, sensor.getThresholdMax());
 			result = prepareStatement.execute();
-			System.out.println("DATA DESERIALISED");
+			System.out.println("data to be serialised");
+			System.out.println("sensor type "+sensor.getTypeSensor().name());
+			jsonGenerator.writeStartObject();
+			jsonGenerator.writeFieldName("sensor type");
+			jsonGenerator.writeObject(sensor);
+			jsonGenerator.writeEndObject();
+			
+			
 			logger.log(Level.DEBUG, "Sensor succesfully inserted in BDD");
 		} catch (IOException | SQLException e) {
 			logger.log(Level.WARN, "Impossible to insert sensor datas in BDD" + e.getClass().getCanonicalName());
@@ -97,13 +113,12 @@ public class SensorDAO extends DAO<Sensor> {
 		ObjectMapper objectMapper = new ObjectMapper();
 		try {
 			sensor = objectMapper.readValue(jsonString, Sensor.class);
-			System.out.println("DATA DESERIALISATION IN PROGRESS");
 			requestSB = new StringBuilder("DELETE FROM capteur where id_capteur=");
 			requestSB.append(sensor.getIdSensor());
 			st = con.createStatement();
 			result = st.execute(requestSB.toString());
 			logger.log(Level.DEBUG, "Sensor succesfully deleted in BDD");
-			System.out.println("DATA DESERIALISED");
+			
 		} catch (SQLException | IOException e) {
 			logger.log(Level.WARN, "Impossible to delete sensor data in BDD" + e.getClass().getCanonicalName());
 		}
@@ -121,7 +136,7 @@ public class SensorDAO extends DAO<Sensor> {
 		try {
 			currentDate = Calendar.getInstance(Locale.FRENCH);
 			sensor = objectMapper.readValue(jsonString, Sensor.class);
-			System.out.println("DATA DESERIALISATION IN PROGRESS");
+			
 			prepareStatement = con.prepareStatement(
 					"UPDATE capteur SET id_partie_commune = ?,type_capteur = ?,type_alert= ?,sensibilite= ?,heure_debut= ?,heure_fin= ?,seuil_min= ?,seuil_max= ?,mise_a_jour= ?,etat= ?  where id_capteur = ?");
 			prepareStatement.setInt(1, sensor.getIdCommonArea());
@@ -139,7 +154,7 @@ public class SensorDAO extends DAO<Sensor> {
 				prepareStatement.setString(10, "OFF");
 			prepareStatement.setInt(11, sensor.getIdSensor());
 			result = prepareStatement.execute();
-			System.out.println("DATA DESERIALISED");
+			
 			logger.log(Level.DEBUG, "Sensor succesfully update in BDD");
 			
 
@@ -149,7 +164,7 @@ public class SensorDAO extends DAO<Sensor> {
 			sensorHistorical.setAlertState(sensor.getAlertState());
 			sensorHistorical.setDate(currentDate.getTime());
 			jsonString = objectMapper.writeValueAsString(sensorHistorical);
-			System.out.println("DATA SERIALISATION IN PROGRESS");
+			
 			DAO<SensorHistorical> sensorHistoricalDao = new SensorHistoricalDAO(con);
 			((SensorHistoricalDAO) sensorHistoricalDao).create(jsonString);
 			System.out.println("DATA SERIALISED");
@@ -170,7 +185,7 @@ public class SensorDAO extends DAO<Sensor> {
 		ObjectMapper objWriter = new ObjectMapper();
 		try {
 			sensor = objectMapper.readValue(jsonString, Sensor.class);
-			System.out.println("DATA DESERIALISATION IN PROGRESS");
+		
 			requestSB = new StringBuilder(
 					"SELECT id_capteur,type_capteur, etat, id_partie_commune,type_alert,sensibilite,heure_debut,heure_fin,seuil_min,mise_a_jour,seuil_max ");
 			requestSB.append("FROM capteur where id_capteur=");
@@ -179,11 +194,11 @@ public class SensorDAO extends DAO<Sensor> {
 			result = st.executeQuery(requestSB.toString());
 			result.next();
 			convertDatas(result);
-			System.out.println("DATA DESERIALISED");
+			
 			jsonString = objWriter.writeValueAsString(sensor);
-			System.out.println("DATA SERIALISATION IN PROGRESS");
+			
 			logger.log(Level.DEBUG, "Sensor succesfully find in BDD");
-			System.out.println("DATA SERIALISED");
+			
 		} catch (SQLException | IOException | NumberFormatException | ParseException e) {
 			logger.log(Level.WARN, "Impossible to get sensor datas from BDD " + e.getClass().getCanonicalName());
 			jsonString = "ERROR";
@@ -208,9 +223,9 @@ public class SensorDAO extends DAO<Sensor> {
 				listSensor.add(sensor);
 			}
 			jsonString = obj.writeValueAsString(listSensor);
-			System.out.println("DATA SERIALISATION IN PROGRESS");
+			
 			logger.log(Level.DEBUG, "Sensors succesfully find in BDD");
-			System.out.println("DATA DESERIALISED");
+			
 		} catch (SQLException | IOException | NumberFormatException | ParseException e) {
 			logger.log(Level.WARN, "Impossible to get sensor datas from BDD " + e.getClass().getCanonicalName());
 			jsonString = "ERROR";
@@ -231,7 +246,7 @@ public class SensorDAO extends DAO<Sensor> {
 		List<Sensor> listSensor = new ArrayList<>();
 		try {
 			sensor = objectMapper.readValue(jsonString, Sensor.class);
-			System.out.println("DATA DESERIALISATION IN PROGRESS");
+			
 			requestSB = new StringBuilder(
 					"SELECT id_capteur,type_capteur, etat, id_partie_commune,type_alert,sensibilite,heure_debut,heure_fin,seuil_min,mise_a_jour,seuil_max ");
 			if (sensor.getTypeSensor() != null) {
@@ -248,11 +263,11 @@ public class SensorDAO extends DAO<Sensor> {
 				convertDatas(result);
 				listSensor.add(sensor);
 			}
-			System.out.println("DATA DESERIALISED");
+			
 			jsonString = objWriter.writeValueAsString(listSensor);
-			System.out.println("DATA SERIALISATION IN PROGRESS");
+		
 			logger.log(Level.DEBUG, "Sensors succesfully find in BDD");
-			System.out.println("DATA DESERIALISED");
+			
 		} catch (SQLException | IOException | NumberFormatException | ParseException e) {
 			logger.log(Level.WARN, "Impossible to get sensor datas from BDD " + e.getClass().getCanonicalName());
 			jsonString = "ERROR";
@@ -287,11 +302,11 @@ public class SensorDAO extends DAO<Sensor> {
 				columns = 1;
 			}
 			jsonString = objWriter.writeValueAsString(jsonString);
-			System.out.println("DATA SERIALISATION IN PROGRESS");
+			
 		} catch (SQLException | JsonProcessingException e) {
 			logger.log(Level.DEBUG, "Impossible to get Sensor datas from BDD " + e.getClass().getCanonicalName());
 		}
-		System.out.println("DATA SERIALISED");
+		
 		return jsonString;
 	}
 

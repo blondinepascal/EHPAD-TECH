@@ -109,7 +109,7 @@ public class TabHistorical extends JPanel {
 		 * Definition of the structure of this tab
 		 */
 		bar = new JPanel();
-		bar.setBackground(Color.DARK_GRAY);
+		bar.setBackground(Color.PINK);
 		bar.setPreferredSize(new Dimension((int) getToolkit().getScreenSize().getWidth(), 80));
 		bar.setLayout(new BorderLayout());
 		bar.setBorder(BorderFactory.createMatteBorder(20, 100, 20, 100, bar.getBackground()));

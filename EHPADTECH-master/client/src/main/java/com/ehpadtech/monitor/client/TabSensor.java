@@ -162,7 +162,7 @@ public class TabSensor extends JPanel {
 		 * Definition of the structure of this tab
 		 */
 		bar = new JPanel();
-		bar.setBackground(Color.DARK_GRAY);
+		bar.setBackground(Color.BLUE);
 		bar.setPreferredSize(new Dimension((int) getToolkit().getScreenSize().getWidth(), 80));
 		bar.setLayout(new BorderLayout());
 		bar.setBorder(BorderFactory.createMatteBorder(20, 100, 20, 100, bar.getBackground()));
@@ -197,7 +197,7 @@ public class TabSensor extends JPanel {
 		 * Definition of the panel Search
 		 */
 		search = new JPanel();
-		search.setBackground(Color.DARK_GRAY);
+		search.setBackground(Color.BLUE);
 		search.setBorder(BorderFactory.createMatteBorder(0, 25, 0, 25, bar.getBackground()));
 		bar.add(search);
 
@@ -427,7 +427,7 @@ public class TabSensor extends JPanel {
 				(int) getToolkit().getScreenSize().getHeight() * 3 / 20, 200, 30);
 		labelIdSensor.setFont(policeLabel);
 		labelIdSensor.setForeground(Color.WHITE);
-		this.add(labelIdSensor);
+		// this.add(labelIdSensor);
 
 		/**
 		 * Definition of label NameCommonArea
@@ -477,7 +477,7 @@ public class TabSensor extends JPanel {
 				(int) getToolkit().getScreenSize().getHeight() * 7 / 20, 200, 30);
 		labelAlertState.setFont(policeLabel);
 		labelAlertState.setForeground(Color.WHITE);
-		this.add(labelAlertState);
+		//this.add(labelAlertState);
 
 		/**
 		 * Definition of label Start Activity
@@ -487,7 +487,7 @@ public class TabSensor extends JPanel {
 				(int) getToolkit().getScreenSize().getHeight() * 9 / 20, 200, 30);
 		labelStartActivity.setFont(policeLabel);
 		labelStartActivity.setForeground(Color.WHITE);
-		this.add(labelStartActivity);
+		//this.add(labelStartActivity);
 
 		/**
 		 * Definition of label End Activity
@@ -497,7 +497,7 @@ public class TabSensor extends JPanel {
 				(int) getToolkit().getScreenSize().getHeight() * 9 / 20, 200, 30);
 		labelEndActivity.setFont(policeLabel);
 		labelEndActivity.setForeground(Color.WHITE);
-		this.add(labelEndActivity);
+		//this.add(labelEndActivity);
 
 		/**
 		 * Definition of label Threshold
@@ -507,7 +507,7 @@ public class TabSensor extends JPanel {
 				(int) getToolkit().getScreenSize().getHeight() * 11 / 20, 200, 30);
 		labelThresholdMin.setFont(policeLabel);
 		labelThresholdMin.setForeground(Color.WHITE);
-		this.add(labelThresholdMin);
+		//this.add(labelThresholdMin);
 
 		/**
 		 * Definition of label Threshold Min
@@ -517,7 +517,7 @@ public class TabSensor extends JPanel {
 				(int) getToolkit().getScreenSize().getHeight() * 11 / 20, 200, 30);
 		labelThresholdMax.setFont(policeLabel);
 		labelThresholdMax.setForeground(Color.WHITE);
-		this.add(labelThresholdMax);
+		//this.add(labelThresholdMax);
 
 		/**
 		 * Definition of label Hour Start Activity
@@ -527,7 +527,7 @@ public class TabSensor extends JPanel {
 				(int) getToolkit().getScreenSize().getHeight() * 10 / 20, 200, 30);
 		labelHourStartActivity.setFont(policeLabel);
 		labelHourStartActivity.setForeground(Color.WHITE);
-		this.add(labelHourStartActivity);
+		//this.add(labelHourStartActivity);
 
 		/**
 		 * Definition of label Minute Start Activity
@@ -537,7 +537,7 @@ public class TabSensor extends JPanel {
 				(int) getToolkit().getScreenSize().getHeight() * 10 / 20, 200, 30);
 		labelMinuteStartActivity.setFont(policeLabel);
 		labelMinuteStartActivity.setForeground(Color.WHITE);
-		this.add(labelMinuteStartActivity);
+		//this.add(labelMinuteStartActivity);
 
 		/**
 		 * Definition of label Hour End Activity
@@ -547,7 +547,7 @@ public class TabSensor extends JPanel {
 				(int) getToolkit().getScreenSize().getHeight() * 10 / 20, 200, 30);
 		labelHourEndActivity.setFont(policeLabel);
 		labelHourEndActivity.setForeground(Color.WHITE);
-		this.add(labelHourEndActivity);
+		//this.add(labelHourEndActivity);
 
 		/**
 		 * Definition of label Minute End Activity
@@ -557,7 +557,7 @@ public class TabSensor extends JPanel {
 				(int) getToolkit().getScreenSize().getHeight() * 10 / 20, 200, 30);
 		labelMinuteEndActivity.setFont(policeLabel);
 		labelMinuteEndActivity.setForeground(Color.WHITE);
-		this.add(labelMinuteEndActivity);
+		//this.add(labelMinuteEndActivity);
 
 		/**
 		 * Definition of label HeadList
@@ -581,7 +581,7 @@ public class TabSensor extends JPanel {
 		else
 			textInputIdSensor.setText(Integer.toString(idSensor));
 		textInputIdSensor.setEditable(false);
-		this.add(textInputIdSensor);
+		//this.add(textInputIdSensor);
 
 		/**
 		 * Definition of textArea NameCommonArea
@@ -635,7 +635,7 @@ public class TabSensor extends JPanel {
 		textInputAlertState.setFont(policeLabel);
 		textInputAlertState.setText("");
 		textInputAlertState.setEditable(false);
-		this.add(textInputAlertState);
+	    //this.add(textInputAlertState);
 
 		/**
 		 * Definition of textArea Sensitivity
@@ -657,7 +657,7 @@ public class TabSensor extends JPanel {
 		textInputHourStartActivity.setBounds((int) getToolkit().getScreenSize().getWidth() * 8 / 28,
 				(int) getToolkit().getScreenSize().getHeight() * 10 / 20, 40, 30);
 		textInputHourStartActivity.setFont(policeLabel);
-		this.add(textInputHourStartActivity);
+		//this.add(textInputHourStartActivity);
 		for (int i = 0; i < 24; i++) {
 			textInputHourStartActivity.addItem(i);
 		}
@@ -669,7 +669,7 @@ public class TabSensor extends JPanel {
 		textInputMinuteStartActivity.setBounds((int) getToolkit().getScreenSize().getWidth() * 10 / 28,
 				(int) getToolkit().getScreenSize().getHeight() * 10 / 20, 40, 30);
 		textInputMinuteStartActivity.setFont(policeLabel);
-		this.add(textInputMinuteStartActivity);
+		//this.add(textInputMinuteStartActivity);
 		for (int i = 0; i < 59; i++) {
 			textInputMinuteStartActivity.addItem(i);
 		}
@@ -681,7 +681,7 @@ public class TabSensor extends JPanel {
 		textInputHourEndActivity.setBounds((int) getToolkit().getScreenSize().getWidth() * 16 / 28,
 				(int) getToolkit().getScreenSize().getHeight() * 10 / 20, 40, 30);
 		textInputHourEndActivity.setFont(policeLabel);
-		this.add(textInputHourEndActivity);
+		//this.add(textInputHourEndActivity);
 		for (int i = 0; i < 24; i++) {
 			textInputHourEndActivity.addItem(i);
 		}
@@ -693,7 +693,7 @@ public class TabSensor extends JPanel {
 		textInputMinuteEndActivity.setBounds((int) getToolkit().getScreenSize().getWidth() * 18 / 28,
 				(int) getToolkit().getScreenSize().getHeight() * 10 / 20, 40, 30);
 		textInputMinuteEndActivity.setFont(policeLabel);
-		this.add(textInputMinuteEndActivity);
+		//this.add(textInputMinuteEndActivity);
 		for (int i = 0; i < 59; i++) {
 			textInputMinuteEndActivity.addItem(i);
 		}
@@ -706,7 +706,7 @@ public class TabSensor extends JPanel {
 				(int) getToolkit().getScreenSize().getHeight() * 12 / 20, 300, 30);
 		textInputThresholdMin.setFont(policeLabel);
 		textInputThresholdMin.setText("");
-		this.add(textInputThresholdMin);
+		//this.add(textInputThresholdMin);
 
 		/**
 		 * Definition of textArea Threshold Max
@@ -716,7 +716,7 @@ public class TabSensor extends JPanel {
 				(int) getToolkit().getScreenSize().getHeight() * 12 / 20, 300, 30);
 		textInputThresholdMax.setFont(policeLabel);
 		textInputThresholdMax.setText("");
-		this.add(textInputThresholdMax);
+		//this.add(textInputThresholdMax);
 
 		//////////////////// CHARGING FIELDS///////////////////////////////////////////
 		if (idSensor != 0 && index == -9999) {
@@ -903,7 +903,7 @@ public class TabSensor extends JPanel {
 		save = new JButton("Save");
 		save.setBounds(((int) getToolkit().getScreenSize().getWidth() * 2 / 4) + 250,
 				(int) getToolkit().getScreenSize().getHeight() * 16 / 20, 200, 40);
-		this.add(save);
+		//this.add(save);
 		save.addActionListener(new ActionListener() {
 			/**
 			 * Get the selected commonArea ,the state and the type of sensor and send to
@@ -1016,7 +1016,7 @@ public class TabSensor extends JPanel {
 		restaure = new JButton("Restore");
 		restaure.setBounds(((int) getToolkit().getScreenSize().getWidth() * 2 / 4),
 				(int) getToolkit().getScreenSize().getHeight() * 16 / 20, 200, 40);
-		this.add(restaure);
+		//this.add(restaure);
 		restaure.addActionListener(new ActionListener() {
 			/**
 			 * when the button Restore is pressed, we define the textAreas as the last
