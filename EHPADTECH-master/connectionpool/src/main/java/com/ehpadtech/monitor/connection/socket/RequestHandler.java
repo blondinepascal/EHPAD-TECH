@@ -34,7 +34,7 @@ public class RequestHandler implements Runnable {
 	 * Initialization of differents parameters
 	 */
 	private Socket sock;
-	private PrintWriter writer = null;
+	private PrintWriter writer = null; 
 	private BufferedReader reader = null;
 	private String response;
 	private String jsonString;

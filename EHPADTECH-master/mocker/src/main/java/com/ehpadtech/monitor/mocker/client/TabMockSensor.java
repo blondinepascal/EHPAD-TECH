@@ -31,7 +31,7 @@ public class TabMockSensor extends JPanel {
 	private JRadioButton configuredRadio;
 	private JRadioButton notConfiguredRadio;
 	private ButtonGroup buttonGroup;
-	// private GenerateSensor generateSensor;
+	//private GenerateSensor generateSensor;
 
 	/**
 	 * Constructor
@@ -45,7 +45,7 @@ public class TabMockSensor extends JPanel {
 		 * Definition of labelNbGenerate Sensor
 		 */
 		policeLabel = new Font("Arial", Font.BOLD, 20); 
-		labelNbGenerateSensor = new JLabel("Number sensor to generate : ");
+		labelNbGenerateSensor = new JLabel("Number: ");
 		labelNbGenerateSensor.setBounds(100, 100, 350, 30);
 		labelNbGenerateSensor.setFont(policeLabel);
 		this.add(labelNbGenerateSensor);
@@ -53,7 +53,7 @@ public class TabMockSensor extends JPanel {
 		/**
 		 * Definition of labelNbGenerate Sensor
 		 */
-		labelTypeSensor = new JLabel("Type sensor to generate : ");
+		labelTypeSensor = new JLabel("Type: ");
 		labelTypeSensor.setBounds(100, 200, 350, 30);
 		labelTypeSensor.setFont(policeLabel);
 		this.add(labelTypeSensor);
@@ -91,8 +91,7 @@ public class TabMockSensor extends JPanel {
 		 * Definition of ComboBox TypeSensor
 		 */
 		String[] types = { "ALL", SensorType.SMOKE.name(), SensorType.MOVE.name(), SensorType.TEMPERATURE.name(),
-				SensorType.WINDOW.name(), SensorType.DOOR.name(), SensorType.ELEVATOR.name(), SensorType.LIGHT.name(),
-				SensorType.FIRE.name(), SensorType.BADGE.name(), SensorType.ROUTER.name() };
+				SensorType.WINDOW.name(), SensorType.DOOR.name() };
 		textInputTypeSensor = new JComboBox<String>(types);
 		textInputTypeSensor.setBounds(100, 250, 250, 40);
 		textInputTypeSensor.setFont(policeLabel);
@@ -101,7 +100,7 @@ public class TabMockSensor extends JPanel {
 
 		///////////////////////// BUTTON/////////////////////////////////////////////////
 		/**
-		 * Definition of Button AddEmployee
+		 * Definition of Button AddSensor
 		 */
 		generateButtonSensor = new JButton("Generate Sensor");
 		generateButtonSensor.setBounds(100, 350, 200, 40);
@@ -131,7 +130,7 @@ public class TabMockSensor extends JPanel {
 		 */
 		restoreButton = new JButton("Restore");
 		restoreButton.setBounds(350, 350, 100, 40);
-		this.add(restoreButton);
+		//this.add(restoreButton);
 		restoreButton.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {

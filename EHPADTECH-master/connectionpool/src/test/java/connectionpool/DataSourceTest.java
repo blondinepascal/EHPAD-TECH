@@ -28,7 +28,7 @@ class DataSourceTest {
 			p = new JDBCConnectionPool(false);
 			Connection con = DataSource.getConnectionFromJDBC(p);
 			assertNotNull(con);
-			logger.log(Level.INFO, "Connection succed ");
+			logger.log(Level.INFO, "Connection successful ");
 		} catch (Exception e) {
 			logger.log(Level.INFO, "SGBD connection is impossible " + e.getClass().getCanonicalName());
 		}
@@ -44,9 +44,9 @@ class DataSourceTest {
 			p = new JDBCConnectionPool(false);
 			Connection con = DataSource.getConnectionFromJDBC(p);
 			Statement st = con.createStatement();
-			String sql = "insert into employee (nom_employee, prenom_employee, mot_de_passe) values ('keita','raymond','test')";
+			String sql = "insert into employee (id_employee,nom_employee,prenom_employee, mot_de_passe,poste) values (30,'MOUNIER','MATHILDE','mathilde','DEVELOPPEUSE')";
 			assertNotNull(st.execute(sql));
-			logger.log(Level.INFO, "Insertion in SGBD succed ");
+			logger.log(Level.INFO, "Insertion in SGBD successful ");
 		} catch (Exception e) {
 			logger.log(Level.INFO, "Insertion in SGBD failed " + e.getClass().getCanonicalName());
 		}
@@ -65,7 +65,7 @@ class DataSourceTest {
 			String sql = "select * from employee";
 			ResultSet rs = st.executeQuery(sql);
 			assertNotNull(rs);
-			logger.log(Level.INFO, "Data recovery in SGBD succed ");
+			logger.log(Level.INFO, "Data recovery in SGBD successfully ");
 		} catch (Exception e) {
 			logger.log(Level.INFO, "Data recovery in SGBD failed " + e.getClass().getCanonicalName());
 		}
@@ -81,7 +81,7 @@ class DataSourceTest {
 			p = new JDBCConnectionPool(false);
 			Connection con = DataSource.getConnectionFromJDBC(p);
 			Statement st = con.createStatement();
-			String sql = "update employee set prenom_employee = 'arnaud'";
+			String sql = "update employee set poste = 'DIRECTEUR ADJOINT' where nom_employee ='PIPARD'";
 			assertNotNull(st.execute(sql));
 			logger.log(Level.INFO, "Update in SGBD succed ");
 		} catch (Exception e) {
@@ -99,9 +99,9 @@ class DataSourceTest {
 			p = new JDBCConnectionPool(false);
 			Connection con = DataSource.getConnectionFromJDBC(p);
 			Statement st = con.createStatement();
-			String sql = "delete from employee where nom_employee = 'keita'";
+			String sql = "delete from employee where nom_employee = 'PAULON'";
 			assertNotNull(st.execute(sql));
-			logger.log(Level.INFO, "Delete in SGBD succed ");
+			logger.log(Level.INFO, "Delete in SGBD successful ");
 		} catch (Exception e) {
 			logger.log(Level.INFO, "Delete in SGBD failed " + e.getClass().getCanonicalName());
 		}
@@ -118,7 +118,7 @@ class DataSourceTest {
 			Connection con = DataSource.getConnectionFromJDBC(p);
 			DataSource.returnConnection(p, con);
 			assertTrue(true);
-			logger.log(Level.INFO, "Return Connection succed ");
+			logger.log(Level.INFO, "Return Connection successful ");
 		} catch (Exception e) {
 			logger.log(Level.INFO, "Return Connection failed " + e.getClass().getCanonicalName());
 		}

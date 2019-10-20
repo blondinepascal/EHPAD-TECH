@@ -581,7 +581,7 @@ public class MonitoringAlert {
 		for (Message messages : listMessageInTreatment) {
 			if (sensors.getSensorState() && sensors.getIdSensor() == messages.getIdSensor()) {
 				if (sensors.getTypeSensor().equals(SensorType.SMOKE)
-						|| sensors.getTypeSensor().equals(SensorType.ELEVATOR)
+						
 						|| sensors.getTypeSensor().equals(SensorType.TEMPERATURE)) {
 					if (((sensors.getThresholdMin() > messages.getThreshold())
 							|| sensors.getThresholdMax() < messages.getThreshold())) {

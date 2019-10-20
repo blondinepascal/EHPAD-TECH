@@ -27,7 +27,7 @@ public class MainGUI {
 				try {
 					popupConnexion = new Connexion();
 					popupConnexion.setVisible(true);
-					logger.log(Level.INFO, "Application Deathkiss runned");
+					logger.log(Level.INFO, "Application Ehpadtech runned");
 				} catch (Exception e) {
 					logger.log(Level.WARN,
 							"Impossible to create the window 'frame' " + e.getClass().getCanonicalName());

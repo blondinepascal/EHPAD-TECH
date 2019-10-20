@@ -30,7 +30,7 @@ public class MockFrame extends JFrame {
 		 */
 		tabMockMessage = new TabMockMessage(Color.PINK, "Tab Message");
 		tabMockSensor = new TabMockSensor(Color.PINK, "Tab Sensor");
-		tabMockEmployee = new TabMockOther(Color.PINK, "Tab Other");
+		//tabMockEmployee = new TabMockOther(Color.PINK, "Tab Other");
 
 		/**
 		 * Add of the title of tabs
@@ -43,7 +43,7 @@ public class MockFrame extends JFrame {
 		 */
 		tab.add("Tab " + tabOfTab[0], tabMockMessage);
 		tab.add("Tab " + tabOfTab[1], tabMockSensor);
-		tab.add("Tab " + tabOfTab[2], tabMockEmployee);
+		//tab.add("Tab " + tabOfTab[2], tabMockEmployee);
 
 		///////////////////////// FRAME/////////////////////////////////////////////////
 		/**

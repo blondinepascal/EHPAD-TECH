@@ -460,9 +460,7 @@ public class GUIBi extends JFrame {
 		panel.add(cbAlertReceivedFloor_1);
 
 		JLabel imagelabel = new JLabel();
-		ImageIcon image = new ImageIcon(
-				"C:\\\\Users\\\\Slayd\\\\OneDrive\\\\Bureau\\\\cours\\\\PDS\\\\BlackMamba\\\\BlackMamba\\\\Temperature.png");
-
+		
 ////////////////////////////////////////////////////////////
 		// Combobox in Tabbed Alert
 		panel_1 = new JPanel();

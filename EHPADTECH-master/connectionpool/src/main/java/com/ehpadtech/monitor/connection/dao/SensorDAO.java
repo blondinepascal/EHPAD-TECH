@@ -88,10 +88,9 @@ public class SensorDAO extends DAO<Sensor> {
 			prepareStatement.setTimestamp(9, new java.sql.Timestamp(currentDate.getTime().getTime()));
 			prepareStatement.setInt(10, sensor.getThresholdMax());
 			result = prepareStatement.execute();
-			System.out.println("data to be serialised");
+			System.out.println("data serialised");
 			System.out.println("sensor type "+sensor.getTypeSensor().name());
 			jsonGenerator.writeStartObject();
-			jsonGenerator.writeFieldName("sensor type");
 			jsonGenerator.writeObject(sensor);
 			jsonGenerator.writeEndObject();
 			

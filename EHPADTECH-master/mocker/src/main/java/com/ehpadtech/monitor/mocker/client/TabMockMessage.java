@@ -202,8 +202,7 @@ public class TabMockMessage extends JPanel {
 		 * Definition of ComboBox TypeSensor
 		 */
 		String[] types = { SensorType.SMOKE.name(), SensorType.MOVE.name(), SensorType.TEMPERATURE.name(),
-				SensorType.WINDOW.name(), SensorType.DOOR.name(), SensorType.ELEVATOR.name(), SensorType.LIGHT.name(),
-				SensorType.FIRE.name(), SensorType.BADGE.name(), SensorType.ROUTER.name() };
+				SensorType.WINDOW.name(), SensorType.DOOR.name() };
 		textInputTypeSensor = new JComboBox<String>(types);
 		textInputTypeSensor.setBounds(400, 250, 250, 40);
 		textInputTypeSensor.setFont(policeLabel);
@@ -250,7 +249,7 @@ public class TabMockMessage extends JPanel {
 		/**
 		 * Definition of Button AddSensor
 		 */
-		generateButton = new JButton("Generate");
+		generateButton = new JButton("Generate messages");
 		generateButton.setBounds(100, 350, 100, 40);
 		this.add(generateButton);
 		generateButton.addActionListener(new ActionListener() {
@@ -343,7 +342,7 @@ public class TabMockMessage extends JPanel {
 		 */
 		restoreButton = new JButton("Restore");
 		restoreButton.setBounds(500, 350, 100, 40);
-		this.add(restoreButton);
+		//this.add(restoreButton);
 		restoreButton.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -358,7 +357,7 @@ public class TabMockMessage extends JPanel {
 		 * Stop the generation of message with the boolean and restart the number of
 		 * thread
 		 */
-		restoreButton = new JButton("Stop generation");
+		restoreButton = new JButton("Stop ");
 		restoreButton.setBounds(250, 350, 200, 40);
 		this.add(restoreButton);
 		restoreButton.addActionListener(new ActionListener() {
@@ -404,6 +403,7 @@ public class TabMockMessage extends JPanel {
 			new MockSocket(requestType, jsonString, table);
 			jsonString = MockSocket.getJson();
 			Sensor[] sensors = objectMapper.readValue(jsonString, Sensor[].class);
+			System.out.println("en cours de déserialisation");
 			listSensor = Arrays.asList(sensors);
 			logger.log(Level.DEBUG, "Find Sensor data succed");
 		} catch (Exception e1) {
