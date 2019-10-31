@@ -4974,3 +4974,126 @@
 2019-10-19 10:44:24 [Thread-2] INFO  MonitoringAlert:383 - *********************************************************************
 2019-10-19 10:46:12 [AWT-EventQueue-0] INFO  MainServerGUI:122 - Server Stoped
 2019-10-19 10:46:12 [AWT-EventQueue-0] INFO  MainServerGUI:123 - Application closed
+2019-10-29 12:28:21 [main] INFO  DataSourceTest:140 - Close all connection failed java.sql.SQLException
+2019-10-29 12:28:21 [main] INFO  DataSourceTest:164 - Limit reached, no available connection java.sql.SQLException
+2019-10-29 12:28:21 [main] INFO  DataSourceTest:123 - Return Connection failed java.sql.SQLException
+2019-10-29 12:28:21 [main] INFO  DataSourceTest:88 - Update in SGBD failed java.sql.SQLException
+2019-10-29 12:28:21 [main] INFO  DataSourceTest:70 - Data recovery in SGBD failed java.sql.SQLException
+2019-10-29 12:28:21 [main] INFO  DataSourceTest:33 - SGBD connection is impossible java.sql.SQLException
+2019-10-29 12:28:21 [main] INFO  DataSourceTest:51 - Insertion in SGBD failed java.sql.SQLException
+2019-10-29 12:28:22 [main] INFO  DataSourceTest:106 - Delete in SGBD failed java.sql.SQLException
+2019-10-29 12:46:34 [main] INFO  DataSourceTest:140 - Close all connection failed java.sql.SQLException
+2019-10-29 12:46:34 [main] INFO  DataSourceTest:164 - Limit reached, no available connection java.sql.SQLException
+2019-10-29 12:46:34 [main] INFO  DataSourceTest:123 - Return Connection failed java.sql.SQLException
+2019-10-29 12:46:34 [main] INFO  DataSourceTest:88 - Update in SGBD failed java.sql.SQLException
+2019-10-29 12:46:34 [main] INFO  DataSourceTest:70 - Data recovery in SGBD failed java.sql.SQLException
+2019-10-29 12:46:34 [main] INFO  DataSourceTest:33 - SGBD connection is impossible java.sql.SQLException
+2019-10-29 12:46:34 [main] INFO  DataSourceTest:51 - Insertion in SGBD failed java.sql.SQLException
+2019-10-29 12:46:34 [main] INFO  DataSourceTest:106 - Delete in SGBD failed java.sql.SQLException
+2019-10-29 16:14:13 [main] WARN  Server:73 - Impossible create the socket java.net.BindException
+2019-10-29 16:14:49 [main] WARN  Server:73 - Impossible create the socket java.net.BindException
+2019-10-29 16:14:52 [AWT-EventQueue-0] INFO  MainServerGUI:72 - Server Initialized
+2019-10-29 16:14:57 [AWT-EventQueue-0] INFO  MainServerGUI:122 - Server Stoped
+2019-10-29 16:14:57 [AWT-EventQueue-0] INFO  MainServerGUI:123 - Application closed
+2019-10-30 12:11:12 [main] INFO  DataSourceTest:140 - Close all connection failed java.sql.SQLException
+2019-10-30 12:11:12 [main] INFO  DataSourceTest:164 - Limit reached, no available connection java.sql.SQLException
+2019-10-30 12:11:12 [main] INFO  DataSourceTest:123 - Return Connection failed java.sql.SQLException
+2019-10-30 12:11:13 [main] INFO  DataSourceTest:88 - Update in SGBD failed java.sql.SQLException
+2019-10-30 12:11:13 [main] INFO  DataSourceTest:70 - Data recovery in SGBD failed java.sql.SQLException
+2019-10-30 12:11:13 [main] INFO  DataSourceTest:33 - SGBD connection is impossible java.sql.SQLException
+2019-10-30 12:11:13 [main] INFO  DataSourceTest:51 - Insertion in SGBD failed java.sql.SQLException
+2019-10-30 12:11:13 [main] INFO  DataSourceTest:106 - Delete in SGBD failed java.sql.SQLException
+2019-10-30 13:38:12 [main] INFO  DataSourceTest:140 - Close all connection failed java.sql.SQLException
+2019-10-30 13:38:12 [main] INFO  DataSourceTest:164 - Limit reached, the pool is saturated java.sql.SQLException
+2019-10-30 13:38:12 [main] INFO  DataSourceTest:123 - Return Connection failed java.sql.SQLException
+2019-10-30 13:38:12 [main] INFO  DataSourceTest:88 - Update in SGBD failed java.sql.SQLException
+2019-10-30 13:38:13 [main] INFO  DataSourceTest:70 - Data recovery in SGBD failed java.sql.SQLException
+2019-10-30 13:38:13 [main] INFO  DataSourceTest:33 - SGBD connection is impossible java.sql.SQLException
+2019-10-30 13:38:13 [main] INFO  DataSourceTest:51 - Insertion in SGBD failed java.sql.SQLException
+2019-10-30 13:38:13 [main] INFO  DataSourceTest:106 - Delete in SGBD failed java.sql.SQLException
+2019-10-30 13:39:12 [main] INFO  DataSourceTest:140 - Close all connection failed java.sql.SQLException
+2019-10-30 13:39:12 [main] INFO  DataSourceTest:164 - Limit reached, the pool is saturated java.sql.SQLException
+2019-10-30 13:39:12 [main] INFO  DataSourceTest:123 - Return Connection failed java.sql.SQLException
+2019-10-30 13:39:12 [main] INFO  DataSourceTest:88 - Update in SGBD failed java.sql.SQLException
+2019-10-30 13:39:12 [main] INFO  DataSourceTest:70 - Data recovery in SGBD failed java.sql.SQLException
+2019-10-30 13:39:12 [main] INFO  DataSourceTest:33 - SGBD connection is impossible java.sql.SQLException
+2019-10-30 13:39:12 [main] INFO  DataSourceTest:51 - Insertion in SGBD failed java.sql.SQLException
+2019-10-30 13:39:12 [main] INFO  DataSourceTest:106 - Delete in SGBD failed java.sql.SQLException
+2019-10-30 13:41:04 [main] INFO  DataSourceTest:140 - Close all connection failed java.sql.SQLException
+2019-10-30 13:41:04 [main] INFO  DataSourceTest:164 - Limit reached, the pool is saturated java.sql.SQLException
+2019-10-30 13:41:04 [main] INFO  DataSourceTest:123 - Return Connection failed java.sql.SQLException
+2019-10-30 13:41:04 [main] INFO  DataSourceTest:88 - Update in SGBD failed java.sql.SQLException
+2019-10-30 13:41:04 [main] INFO  DataSourceTest:70 - Data recovery in SGBD failed java.sql.SQLException
+2019-10-30 13:41:05 [main] INFO  DataSourceTest:33 - SGBD connection is impossible java.sql.SQLException
+2019-10-30 13:41:05 [main] INFO  DataSourceTest:51 - Insertion in SGBD failed java.sql.SQLException
+2019-10-30 13:41:05 [main] INFO  DataSourceTest:106 - Delete in SGBD failed java.sql.SQLException
+2019-10-30 13:41:59 [main] INFO  DataSourceTest:140 - Close all connection failed java.sql.SQLException
+2019-10-30 13:41:59 [main] INFO  DataSourceTest:164 - Limit reached, the pool is saturated java.sql.SQLException
+2019-10-30 13:41:59 [main] INFO  DataSourceTest:123 - Return Connection failed java.sql.SQLException
+2019-10-30 13:41:59 [main] INFO  DataSourceTest:88 - Update in SGBD failed java.sql.SQLException
+2019-10-30 13:41:59 [main] INFO  DataSourceTest:70 - Data recovery in SGBD failed java.sql.SQLException
+2019-10-30 13:41:59 [main] INFO  DataSourceTest:33 - SGBD connection is impossible java.sql.SQLException
+2019-10-30 13:41:59 [main] INFO  DataSourceTest:51 - Insertion in SGBD failed java.sql.SQLException
+2019-10-30 13:41:59 [main] INFO  DataSourceTest:106 - Delete in SGBD failed java.sql.SQLException
+2019-10-30 13:43:04 [main] INFO  DataSourceTest:140 - Close all connection failed java.sql.SQLException
+2019-10-30 13:43:04 [main] INFO  DataSourceTest:164 - Limit reached, the pool is saturated java.sql.SQLException
+2019-10-30 13:43:04 [main] INFO  DataSourceTest:123 - Return Connection failed java.sql.SQLException
+2019-10-30 13:43:04 [main] INFO  DataSourceTest:88 - Update in SGBD failed java.sql.SQLException
+2019-10-30 13:43:04 [main] INFO  DataSourceTest:70 - Data recovery in SGBD failed java.sql.SQLException
+2019-10-30 13:43:04 [main] INFO  DataSourceTest:33 - SGBD connection is impossible java.sql.SQLException
+2019-10-30 13:43:04 [main] INFO  DataSourceTest:51 - Insertion in SGBD failed java.sql.SQLException
+2019-10-30 13:43:04 [main] INFO  DataSourceTest:106 - Delete in SGBD failed java.sql.SQLException
+2019-10-30 13:45:18 [main] INFO  DataSourceTest:138 - All connection are closed 
+2019-10-30 13:45:18 [main] INFO  DataSourceTest:161 - Connection 1 done
+2019-10-30 13:45:18 [main] INFO  DataSourceTest:161 - Connection 2 done
+2019-10-30 13:45:18 [main] INFO  DataSourceTest:161 - Connection 3 done
+2019-10-30 13:45:18 [main] INFO  DataSourceTest:161 - Connection 4 done
+2019-10-30 13:45:18 [main] INFO  DataSourceTest:161 - Connection 5 done
+2019-10-30 13:45:18 [main] INFO  DataSourceTest:161 - Connection 6 done
+2019-10-30 13:45:18 [main] INFO  DataSourceTest:161 - Connection 7 done
+2019-10-30 13:45:18 [main] INFO  DataSourceTest:161 - Connection 8 done
+2019-10-30 13:45:18 [main] INFO  DataSourceTest:161 - Connection 9 done
+2019-10-30 13:45:18 [main] INFO  DataSourceTest:161 - Connection 10 done
+2019-10-30 13:45:18 [main] INFO  DataSourceTest:164 - Limit reached, the pool is saturated java.sql.SQLException
+2019-10-30 13:45:18 [main] INFO  DataSourceTest:121 - Return Connection successful 
+2019-10-30 13:45:18 [main] INFO  DataSourceTest:86 - Update in SGBD succed 
+2019-10-30 13:45:18 [main] INFO  DataSourceTest:68 - Data recovery in SGBD successfully 
+2019-10-30 13:45:18 [main] INFO  DataSourceTest:31 - Connection successful 
+2019-10-30 13:45:19 [main] INFO  DataSourceTest:49 - Insertion in SGBD successful 
+2019-10-30 13:45:19 [main] INFO  DataSourceTest:104 - Delete in SGBD successful 
+2019-10-30 13:49:54 [main] INFO  DataSourceTest:138 - All connection are closed 
+2019-10-30 13:49:54 [main] INFO  DataSourceTest:161 - Connection 1 done
+2019-10-30 13:49:54 [main] INFO  DataSourceTest:161 - Connection 2 done
+2019-10-30 13:49:54 [main] INFO  DataSourceTest:161 - Connection 3 done
+2019-10-30 13:49:54 [main] INFO  DataSourceTest:161 - Connection 4 done
+2019-10-30 13:49:54 [main] INFO  DataSourceTest:161 - Connection 5 done
+2019-10-30 13:49:54 [main] INFO  DataSourceTest:161 - Connection 6 done
+2019-10-30 13:49:54 [main] INFO  DataSourceTest:161 - Connection 7 done
+2019-10-30 13:49:54 [main] INFO  DataSourceTest:161 - Connection 8 done
+2019-10-30 13:49:54 [main] INFO  DataSourceTest:161 - Connection 9 done
+2019-10-30 13:49:54 [main] INFO  DataSourceTest:161 - Connection 10 done
+2019-10-30 13:49:54 [main] INFO  DataSourceTest:164 - Limit reached, the pool is saturated java.sql.SQLException
+2019-10-30 13:49:55 [main] INFO  DataSourceTest:121 - Return Connection successful 
+2019-10-30 13:49:55 [main] INFO  DataSourceTest:86 - Update in SGBD succed 
+2019-10-30 13:49:55 [main] INFO  DataSourceTest:68 - Data recovery in SGBD successfully 
+2019-10-30 13:49:55 [main] INFO  DataSourceTest:31 - Connection successful 
+2019-10-30 13:49:55 [main] INFO  DataSourceTest:51 - Insertion in SGBD failed org.postgresql.util.PSQLException
+2019-10-30 13:49:55 [main] INFO  DataSourceTest:104 - Delete in SGBD successful 
+2019-10-30 13:53:41 [main] INFO  DataSourceTest:138 - All connection are closed 
+2019-10-30 13:53:41 [main] INFO  DataSourceTest:161 - Connection 1 done
+2019-10-30 13:53:41 [main] INFO  DataSourceTest:161 - Connection 2 done
+2019-10-30 13:53:41 [main] INFO  DataSourceTest:161 - Connection 3 done
+2019-10-30 13:53:41 [main] INFO  DataSourceTest:161 - Connection 4 done
+2019-10-30 13:53:41 [main] INFO  DataSourceTest:161 - Connection 5 done
+2019-10-30 13:53:41 [main] INFO  DataSourceTest:161 - Connection 6 done
+2019-10-30 13:53:41 [main] INFO  DataSourceTest:161 - Connection 7 done
+2019-10-30 13:53:41 [main] INFO  DataSourceTest:161 - Connection 8 done
+2019-10-30 13:53:41 [main] INFO  DataSourceTest:161 - Connection 9 done
+2019-10-30 13:53:41 [main] INFO  DataSourceTest:161 - Connection 10 done
+2019-10-30 13:53:41 [main] INFO  DataSourceTest:164 - Limit reached, the pool is saturated java.sql.SQLException
+2019-10-30 13:53:41 [main] INFO  DataSourceTest:121 - Return Connection successful 
+2019-10-30 13:53:42 [main] INFO  DataSourceTest:86 - Update in SGBD succed 
+2019-10-30 13:53:42 [main] INFO  DataSourceTest:68 - Data recovery in SGBD successfully 
+2019-10-30 13:53:42 [main] INFO  DataSourceTest:31 - Connection successful 
+2019-10-30 13:53:42 [main] INFO  DataSourceTest:51 - Insertion in SGBD failed org.postgresql.util.PSQLException
+2019-10-30 13:53:42 [main] INFO  DataSourceTest:104 - Delete in SGBD successful 
