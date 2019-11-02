@@ -91,7 +91,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>com.ehpadtech.monitor.connectionpool.launcher.MainServerGUI</mainClass>
+							<mainClass>com.ehpadtech.monitor.connection.launcher.MainServerGUI</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>
