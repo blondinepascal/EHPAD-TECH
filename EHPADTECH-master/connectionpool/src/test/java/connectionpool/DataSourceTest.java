@@ -21,7 +21,7 @@ class DataSourceTest {
 	/**
 	 * Test GetConnection
 	 */
-	@Test
+	/*@Test
 	void testGetConnectionFromJDBC() {
 		JDBCConnectionPool p;
 		try {
@@ -37,14 +37,14 @@ class DataSourceTest {
 	/**
 	 * Test insertion in SGBD
 	 */
-	@Test
+	/*@Test
 	void testInsertData() {
 		JDBCConnectionPool p;
 		try {
 			p = new JDBCConnectionPool(false);
 			Connection con = DataSource.getConnectionFromJDBC(p);
 			Statement st = con.createStatement();
-			String sql = "insert into employee (id_employee,nom_employee,prenom_employee, mot_de_passe,poste) values (30,'MOUNIER','MATHILDE','mathilde','DEVELOPPEUSE')";
+			String sql = "insert into employee (id_employee,nom_employee,prenom_employee, mot_de_passe,poste) values (33,'BATIST','SYLVAIN','sylvain','DEVELOPPEUR')";
 			assertNotNull(st.execute(sql));
 			logger.log(Level.INFO, "Insertion in SGBD successful ");
 		} catch (Exception e) {
@@ -55,7 +55,7 @@ class DataSourceTest {
 	/**
 	 * Test get data in SGBD
 	 */
-	@Test
+	/*@Test
 	void testGetData() {
 		JDBCConnectionPool p;
 		try {
@@ -74,14 +74,14 @@ class DataSourceTest {
 	/**
 	 * Test update data in SGBD
 	 */
-	@Test
+	/*@Test
 	void testUpdateData() {
 		JDBCConnectionPool p;
 		try {
 			p = new JDBCConnectionPool(false);
 			Connection con = DataSource.getConnectionFromJDBC(p);
 			Statement st = con.createStatement();
-			String sql = "update employee set poste = 'DIRECTEUR ADJOINT' where nom_employee ='PIPARD'";
+			String sql = "update employee set poste = 'DIRECTEUR' where nom_employee ='PIPARD'";
 			assertNotNull(st.execute(sql));
 			logger.log(Level.INFO, "Update in SGBD succed ");
 		} catch (Exception e) {
@@ -92,7 +92,7 @@ class DataSourceTest {
 	/**
 	 * Test delete data in SGBD
 	 */
-	@Test
+	/*@Test
 	void testDeleteData() {
 		JDBCConnectionPool p;
 		try {
@@ -110,7 +110,8 @@ class DataSourceTest {
 	/**
 	 * Test return connection
 	 */
-	@Test
+	
+	/*@Test
 	void testReturnConnection() {
 		JDBCConnectionPool p;
 		try {
@@ -127,7 +128,7 @@ class DataSourceTest {
 	/**
 	 * Test close All connections
 	 */
-	@Test
+	/*@Test
 	void testCloseConnectionsFromJDBC() {
 		JDBCConnectionPool p;
 		try {
@@ -141,74 +142,10 @@ class DataSourceTest {
 		}
 	}
 
-	/**
-	 * Test total connection on pool
-	 */
-	@Test
-	void testTotalConnection() {
-		JDBCConnectionPool p;
-		int totalConnection1, totalConnection2;
-		try {
-			p = new JDBCConnectionPool(false);
-			totalConnection1 = p.getTotalConnections();
-			logger.log(Level.INFO, "Number of Connection is " + totalConnection1);
-			DataSource.getConnectionFromJDBC(p);
-			DataSource.getConnectionFromJDBC(p);
-			DataSource.getConnectionFromJDBC(p);
-			totalConnection2 = p.getTotalConnections();
-			assertNotEquals(totalConnection1, totalConnection2);
-			logger.log(Level.INFO, "Number of Connection increased to " + totalConnection2);
-		} catch (Exception e) {
-			logger.log(Level.INFO, "Connection dont increase normaly " + e.getClass().getCanonicalName());
-		}
-	}
-
-	/*
-	 * Test if getConnection() give the same connection
-	 */
-	@Test
-	void testDifferentCOnnections() {
-		JDBCConnectionPool p;
-		try {
-			p = new JDBCConnectionPool(false);
-			Connection con = DataSource.getConnectionFromJDBC(p);
-			Connection con2 = DataSource.getConnectionFromJDBC(p);
-			assertNotEquals(con, con2);
-			logger.log(Level.INFO, "Connection 1 and connection 2 are different");
-		} catch (Exception e) {
-			logger.log(Level.INFO, "Connection 1 and connection 2 are an unique connection" + e.getClass().getCanonicalName());
-		}
-	}
-
-	/*
-	 * Test if we reach the limit of connection, with the creation of 4 connections
-	 * and a nbMaxConnection define at 3 on Configuration.properties
-	 */
-	@Test
-	void testMaxConnections() {
-		JDBCConnectionPool p;
-		try {
-			p = new JDBCConnectionPool(false);
-			Connection con = DataSource.getConnectionFromJDBC(p);
-			assertNotNull(con);
-			logger.log(Level.INFO, "Connection 1 done");
-			Connection con2 = DataSource.getConnectionFromJDBC(p);
-			assertNotNull(con2);
-			logger.log(Level.INFO, "Connection 2 done");
-			Connection con3 = DataSource.getConnectionFromJDBC(p);
-			assertNotNull(con3);
-			logger.log(Level.INFO, "Connection 3 done");
-			Connection con4 = DataSource.getConnectionFromJDBC(p);
-			assertNotNull(con4);
-			logger.log(Level.INFO, "Connection 4 done");
-		} catch (Exception e) {
-			logger.log(Level.INFO, "Limit reached, no available connection " + e.getClass().getCanonicalName());
-		}
-	}
-
+	
 	/**
 	 * Test if we reach the limit of connection, with unlimited creation of
-	 * connections and a nbMaxConnection define at 3 on Configuration.properties but
+	 * connections and a nbMaxConnection define on Configuration.properties but
 	 * this test can be used if we change the nbMaxConnection
 	 */
 	@Test
@@ -224,7 +161,7 @@ class DataSourceTest {
 				logger.log(Level.INFO, "Connection " + nbconnexionscreated + " done");
 			}
 		} catch (Exception e) {
-			logger.log(Level.INFO, "Limit reached, no available connection " + e.getClass().getCanonicalName());
+			logger.log(Level.INFO, "Limit reached, the pool is saturated " + e.getClass().getCanonicalName());
 		}
 	}
 }
