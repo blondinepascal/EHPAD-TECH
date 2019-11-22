@@ -91,6 +91,12 @@ public class Server {
 						Thread threadRequestHandler = new Thread(
 								new RequestHandler(client, connectionGived, monitoringAlert));
 						threadRequestHandler.start();
+						try {
+							threadRequestHandler.join();
+						} catch (InterruptedException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
 						DataSource.returnConnection(pool, connectionGived);
 					} catch (IOException | SQLException e) {
 					}
