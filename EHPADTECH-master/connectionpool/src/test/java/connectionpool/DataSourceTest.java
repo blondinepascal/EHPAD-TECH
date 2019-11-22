@@ -21,7 +21,7 @@ class DataSourceTest {
 	/**
 	 * Test GetConnection
 	 */
-	/*@Test
+	@Test
 	void testGetConnectionFromJDBC() {
 		JDBCConnectionPool p;
 		try {
@@ -55,7 +55,7 @@ class DataSourceTest {
 	/**
 	 * Test get data in SGBD
 	 */
-	/*@Test
+	@Test
 	void testGetData() {
 		JDBCConnectionPool p;
 		try {
@@ -111,7 +111,7 @@ class DataSourceTest {
 	 * Test return connection
 	 */
 	
-	/*@Test
+	@Test
 	void testReturnConnection() {
 		JDBCConnectionPool p;
 		try {
@@ -128,7 +128,7 @@ class DataSourceTest {
 	/**
 	 * Test close All connections
 	 */
-	/*@Test
+	@Test
 	void testCloseConnectionsFromJDBC() {
 		JDBCConnectionPool p;
 		try {
@@ -154,7 +154,7 @@ class DataSourceTest {
 		int nbconnexionscreated = 0;
 		try {
 			p = new JDBCConnectionPool(false);
-			while (nbconnexionscreated < 10000) {
+			while (nbconnexionscreated < 11) {
 				nbconnexionscreated++;
 				Connection con = DataSource.getConnectionFromJDBC(p);
 				assertNotNull(con);
