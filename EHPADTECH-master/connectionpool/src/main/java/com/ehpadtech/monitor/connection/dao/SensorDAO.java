@@ -64,12 +64,8 @@ public class SensorDAO extends DAO<Sensor> {
 		ObjectMapper objectMapper = new ObjectMapper();
 		
 		try {
-			currentDate = Calendar.getInstance(Locale.FRENCH);
 			sensor = objectMapper.readValue(jsonString, Sensor.class);
-			JsonFactory jsonFactory = new JsonFactory();
-			JsonGenerator jsonGenerator = jsonFactory.createGenerator(System.out);
-			jsonGenerator.setPrettyPrinter(new DefaultPrettyPrinter());
-			jsonGenerator.setCodec(objectMapper);
+			currentDate = Calendar.getInstance(Locale.FRENCH);
 			
 			prepareStatement = con.prepareStatement(
 					"INSERT INTO capteur (type_capteur, etat, id_partie_commune,type_alert,sensibilite,heure_debut,heure_fin,seuil_min,mise_a_jour,seuil_max) values (?,?,?,?,?,?,?,?,?,?)");
@@ -90,9 +86,21 @@ public class SensorDAO extends DAO<Sensor> {
 			result = prepareStatement.execute();
 			System.out.println("data serialised");
 			System.out.println("sensor type "+sensor.getTypeSensor().name());
-			jsonGenerator.writeStartObject();
-			jsonGenerator.writeObject(sensor);
-			jsonGenerator.writeEndObject();
+			
+			JsonFactory jsonFactory = new JsonFactory();
+			JsonGenerator jsonGenerator = jsonFactory.createGenerator(System.out);
+			jsonGenerator.setPrettyPrinter(new DefaultPrettyPrinter());
+			jsonGenerator.setCodec(objectMapper);
+			
+			//jsonGenerator.writeStartObject();
+			//jsonGenerator.writeObject(sensor);
+			//jsonGenerator.writeEndObject();
+			objectMapper.writeValue(jsonGenerator, sensor);
+			//String jsonInString = objectMapper.writeValueAsString(sensor);
+			//System.out.println(jsonInString);
+			//jsonInString = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(sensor);
+			//System.out.println(jsonInString);
+			
 			
 			
 			logger.log(Level.DEBUG, "Sensor succesfully inserted in BDD");
@@ -116,6 +124,13 @@ public class SensorDAO extends DAO<Sensor> {
 			requestSB.append(sensor.getIdSensor());
 			st = con.createStatement();
 			result = st.execute(requestSB.toString());
+			System.out.println("data deserialised");		
+			
+			JsonFactory jsonFactory = new JsonFactory();
+			JsonGenerator jsonGenerator = jsonFactory.createGenerator(System.out);
+			jsonGenerator.setPrettyPrinter(new DefaultPrettyPrinter());
+			jsonGenerator.setCodec(objectMapper);
+			objectMapper.writeValue(jsonGenerator, sensor);
 			logger.log(Level.DEBUG, "Sensor succesfully deleted in BDD");
 			
 		} catch (SQLException | IOException e) {
@@ -195,6 +210,13 @@ public class SensorDAO extends DAO<Sensor> {
 			convertDatas(result);
 			
 			jsonString = objWriter.writeValueAsString(sensor);
+            System.out.println("data deserialised");		
+			
+			JsonFactory jsonFactory = new JsonFactory();
+			JsonGenerator jsonGenerator = jsonFactory.createGenerator(System.out);
+			jsonGenerator.setPrettyPrinter(new DefaultPrettyPrinter());
+			jsonGenerator.setCodec(objectMapper);
+			objectMapper.writeValue(jsonGenerator, sensor);
 			
 			logger.log(Level.DEBUG, "Sensor succesfully find in BDD");
 			

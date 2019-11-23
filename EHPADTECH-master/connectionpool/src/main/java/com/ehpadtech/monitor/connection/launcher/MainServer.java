@@ -20,7 +20,7 @@ public class MainServer {
 	private static int port;
 	private static final Logger logger = LogManager.getLogger(MainServer.class);
 	private static int hour = 0;
-	private static int minute = 0;
+	private static int minute = 0; 
 	private static int seconde = 0;
 	private static ActionListener tache_timer;
 	private static Server ts;

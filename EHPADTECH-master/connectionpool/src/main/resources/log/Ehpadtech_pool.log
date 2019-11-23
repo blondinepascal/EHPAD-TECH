@@ -5097,3 +5097,581 @@
 2019-10-30 13:53:42 [main] INFO  DataSourceTest:31 - Connection successful 
 2019-10-30 13:53:42 [main] INFO  DataSourceTest:51 - Insertion in SGBD failed org.postgresql.util.PSQLException
 2019-10-30 13:53:42 [main] INFO  DataSourceTest:104 - Delete in SGBD successful 
+2019-11-02 09:36:57 [main] INFO  DataSourceTest:140 - Close all connection failed java.sql.SQLException
+2019-11-02 09:37:07 [main] INFO  DataSourceTest:164 - Limit reached, the pool is saturated java.sql.SQLException
+2019-11-02 09:37:17 [main] INFO  DataSourceTest:123 - Return Connection failed java.sql.SQLException
+2019-11-02 09:37:27 [main] INFO  DataSourceTest:88 - Update in SGBD failed java.sql.SQLException
+2019-11-02 09:37:37 [main] INFO  DataSourceTest:70 - Data recovery in SGBD failed java.sql.SQLException
+2019-11-02 09:37:47 [main] INFO  DataSourceTest:33 - SGBD connection is impossible java.sql.SQLException
+2019-11-02 09:37:57 [main] INFO  DataSourceTest:51 - Insertion in SGBD failed java.sql.SQLException
+2019-11-02 09:38:07 [main] INFO  DataSourceTest:106 - Delete in SGBD failed java.sql.SQLException
+2019-11-04 11:21:30 [main] INFO  DataSourceTest:164 - Limit reached, the pool is saturated java.sql.SQLException
+2019-11-04 18:08:16 [main] INFO  DataSourceTest:161 - Connection 1 done
+2019-11-04 18:08:16 [main] INFO  DataSourceTest:161 - Connection 2 done
+2019-11-04 18:08:16 [main] INFO  DataSourceTest:161 - Connection 3 done
+2019-11-04 18:08:16 [main] INFO  DataSourceTest:161 - Connection 4 done
+2019-11-04 18:08:16 [main] INFO  DataSourceTest:161 - Connection 5 done
+2019-11-04 18:08:16 [main] INFO  DataSourceTest:161 - Connection 6 done
+2019-11-04 18:08:16 [main] INFO  DataSourceTest:161 - Connection 7 done
+2019-11-04 18:08:16 [main] INFO  DataSourceTest:161 - Connection 8 done
+2019-11-04 18:08:16 [main] INFO  DataSourceTest:161 - Connection 9 done
+2019-11-04 18:08:16 [main] INFO  DataSourceTest:161 - Connection 10 done
+2019-11-04 18:08:16 [main] INFO  DataSourceTest:164 - Limit reached, the pool is saturated java.sql.SQLException
+2019-11-04 18:18:03 [main] INFO  DataSourceTest:139 - All connection are closed 
+2019-11-04 18:18:03 [main] INFO  DataSourceTest:161 - Connection 1 done
+2019-11-04 18:18:03 [main] INFO  DataSourceTest:161 - Connection 2 done
+2019-11-04 18:18:03 [main] INFO  DataSourceTest:161 - Connection 3 done
+2019-11-04 18:18:03 [main] INFO  DataSourceTest:161 - Connection 4 done
+2019-11-04 18:18:03 [main] INFO  DataSourceTest:161 - Connection 5 done
+2019-11-04 18:18:04 [main] INFO  DataSourceTest:161 - Connection 6 done
+2019-11-04 18:18:04 [main] INFO  DataSourceTest:161 - Connection 7 done
+2019-11-04 18:18:04 [main] INFO  DataSourceTest:161 - Connection 8 done
+2019-11-04 18:18:04 [main] INFO  DataSourceTest:161 - Connection 9 done
+2019-11-04 18:18:04 [main] INFO  DataSourceTest:161 - Connection 10 done
+2019-11-04 18:18:04 [main] INFO  DataSourceTest:164 - Limit reached, the pool is saturated java.sql.SQLException
+2019-11-04 18:18:04 [main] INFO  DataSourceTest:122 - Return Connection successful 
+2019-11-04 18:18:04 [main] INFO  DataSourceTest:68 - Data recovery in SGBD successfully 
+2019-11-04 18:18:04 [main] INFO  DataSourceTest:31 - Connection successful 
+2019-11-04 18:51:19 [main] INFO  DataSourceTest:139 - All connection are closed 
+2019-11-04 18:51:20 [main] INFO  DataSourceTest:161 - Connection 1 done
+2019-11-04 18:51:20 [main] INFO  DataSourceTest:161 - Connection 2 done
+2019-11-04 18:51:20 [main] INFO  DataSourceTest:161 - Connection 3 done
+2019-11-04 18:51:20 [main] INFO  DataSourceTest:161 - Connection 4 done
+2019-11-04 18:51:20 [main] INFO  DataSourceTest:161 - Connection 5 done
+2019-11-04 18:51:20 [main] INFO  DataSourceTest:161 - Connection 6 done
+2019-11-04 18:51:20 [main] INFO  DataSourceTest:161 - Connection 7 done
+2019-11-04 18:51:20 [main] INFO  DataSourceTest:161 - Connection 8 done
+2019-11-04 18:51:20 [main] INFO  DataSourceTest:161 - Connection 9 done
+2019-11-04 18:51:20 [main] INFO  DataSourceTest:161 - Connection 10 done
+2019-11-04 18:51:20 [main] INFO  DataSourceTest:164 - Limit reached, the pool is saturated java.sql.SQLException
+2019-11-04 18:51:20 [main] INFO  DataSourceTest:122 - Return Connection successful 
+2019-11-04 18:51:20 [main] INFO  DataSourceTest:68 - Data recovery in SGBD successfully 
+2019-11-04 18:51:20 [main] INFO  DataSourceTest:31 - Connection successful 
+2019-11-04 19:31:13 [main] INFO  DataSourceTest:139 - All connection are closed 
+2019-11-04 19:31:13 [main] INFO  DataSourceTest:161 - Connection 1 done
+2019-11-04 19:31:13 [main] INFO  DataSourceTest:161 - Connection 2 done
+2019-11-04 19:31:13 [main] INFO  DataSourceTest:161 - Connection 3 done
+2019-11-04 19:31:13 [main] INFO  DataSourceTest:161 - Connection 4 done
+2019-11-04 19:31:13 [main] INFO  DataSourceTest:161 - Connection 5 done
+2019-11-04 19:31:13 [main] INFO  DataSourceTest:161 - Connection 6 done
+2019-11-04 19:31:13 [main] INFO  DataSourceTest:161 - Connection 7 done
+2019-11-04 19:31:13 [main] INFO  DataSourceTest:161 - Connection 8 done
+2019-11-04 19:31:13 [main] INFO  DataSourceTest:161 - Connection 9 done
+2019-11-04 19:31:13 [main] INFO  DataSourceTest:161 - Connection 10 done
+2019-11-04 19:31:13 [main] INFO  DataSourceTest:164 - Limit reached, the pool is saturated java.sql.SQLException
+2019-11-04 19:31:13 [main] INFO  DataSourceTest:122 - Return Connection successful 
+2019-11-04 19:31:14 [main] INFO  DataSourceTest:68 - Data recovery in SGBD successfully 
+2019-11-04 19:31:14 [main] INFO  DataSourceTest:31 - Connection successful 
+2019-11-11 20:19:23 [AWT-EventQueue-0] INFO  MainServerGUI:72 - Server Initialized
+2019-11-11 20:19:24 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:24 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:24 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:24 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:24 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:24 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:25 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:25 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:25 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:25 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:25 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:25 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:26 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:26 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:26 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:26 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:26 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:26 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:27 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:27 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:27 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:27 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:27 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:27 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:28 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:28 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:28 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:28 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:28 [Thread-1] INFO  MonitoringAlert:393 - 5 Secondes without messages
+2019-11-11 20:19:28 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:28 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:29 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:29 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:29 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:29 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:29 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:29 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:29 [AWT-EventQueue-0] INFO  MainServerGUI:122 - Server Stoped
+2019-11-11 20:19:29 [AWT-EventQueue-0] INFO  MainServerGUI:123 - Application closed
+2019-11-11 20:19:30 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:30 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:30 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:30 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:30 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:30 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:31 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:31 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:31 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:31 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:31 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:31 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:32 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:32 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:32 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:32 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:32 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:32 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:33 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:33 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:33 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:33 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:33 [Thread-1] INFO  MonitoringAlert:393 - 10 Secondes without messages
+2019-11-11 20:19:33 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:33 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:34 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:34 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:34 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:34 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:34 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:34 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:35 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:35 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:35 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:35 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:35 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:35 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:36 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:36 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:36 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:36 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:36 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:36 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:37 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:37 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:37 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:37 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:37 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:37 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:38 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:38 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:38 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:38 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:38 [Thread-1] INFO  MonitoringAlert:393 - 15 Secondes without messages
+2019-11-11 20:19:38 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:38 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:39 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:39 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:39 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:39 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:39 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:39 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:40 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:40 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:40 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:40 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:40 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:40 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:41 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:41 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:41 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:41 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:41 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:41 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:42 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:42 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:42 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:42 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:42 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:42 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:43 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:43 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:43 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:43 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:43 [Thread-1] INFO  MonitoringAlert:393 - 20 Secondes without messages
+2019-11-11 20:19:43 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:43 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:44 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:44 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:44 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:44 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:44 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:44 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:45 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:45 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:45 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:45 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:45 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:45 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:46 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:46 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:46 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:46 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:46 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:46 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:47 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:47 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:47 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:47 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:47 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:47 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:48 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:48 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:48 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:48 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:48 [Thread-1] INFO  MonitoringAlert:393 - 25 Secondes without messages
+2019-11-11 20:19:48 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:48 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:49 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:49 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:49 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:49 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:49 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:49 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:50 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:50 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:50 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:50 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:50 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:50 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:51 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:51 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:51 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:51 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:51 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:51 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:52 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:52 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:52 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:52 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:52 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:52 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:53 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:53 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:53 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:53 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:53 [Thread-1] INFO  MonitoringAlert:393 - 30 Secondes without messages
+2019-11-11 20:19:53 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:53 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:54 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:54 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:54 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:54 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:54 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:54 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:55 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:55 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:55 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:55 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:55 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:55 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:56 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:56 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:56 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:56 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:56 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:56 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:57 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:57 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:57 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:57 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:57 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:57 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:58 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:58 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:58 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:58 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:58 [Thread-1] INFO  MonitoringAlert:393 - 35 Secondes without messages
+2019-11-11 20:19:58 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:58 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:59 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:59 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:59 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:59 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:19:59 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:19:59 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:00 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:00 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:00 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:00 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:00 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:00 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:01 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:01 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:01 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:01 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:01 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:01 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:02 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:02 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:02 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:02 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:02 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:02 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:03 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:03 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:03 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:03 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:03 [Thread-1] INFO  MonitoringAlert:393 - 40 Secondes without messages
+2019-11-11 20:20:03 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:03 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:04 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:04 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:04 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:04 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:04 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:04 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:05 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:05 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:05 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:05 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:05 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:05 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:06 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:06 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:06 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:06 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:06 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:06 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:07 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:07 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:07 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:07 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:07 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:07 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:08 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:08 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:08 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:08 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:08 [Thread-1] INFO  MonitoringAlert:393 - 45 Secondes without messages
+2019-11-11 20:20:08 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:08 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:09 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:09 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:09 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:09 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:09 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:09 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:10 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:10 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:10 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:10 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:10 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:10 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:11 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:11 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:11 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:11 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:11 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:11 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:12 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:12 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:12 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:12 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:12 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:12 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:13 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:13 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:13 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:13 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:13 [Thread-1] INFO  MonitoringAlert:393 - 50 Secondes without messages
+2019-11-11 20:20:13 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:13 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:14 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:14 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:14 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:14 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:14 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:14 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:15 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:15 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:15 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:15 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:15 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:15 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:16 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:16 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:16 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:16 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:16 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:16 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:17 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:17 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:17 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:17 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:17 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:17 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:18 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:18 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:18 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:18 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:18 [Thread-1] INFO  MonitoringAlert:393 - 55 Secondes without messages
+2019-11-11 20:20:18 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:18 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:19 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:19 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:19 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:19 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:19 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:19 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:20 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:20 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:20 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:20 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:20 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:20 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:21 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:21 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:21 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:21 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:21 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:21 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:22 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:22 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:22 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:22 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:22 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:22 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:23 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:23 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:23 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:23 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:23 [Thread-1] INFO  MonitoringAlert:393 - 60 Secondes without messages
+2019-11-11 20:20:23 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:23 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:24 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:24 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:24 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:20:24 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:20:24 [Thread-1] INFO  MonitoringAlert:381 - *********************************************************************
+2019-11-11 20:20:24 [Thread-1] INFO  MonitoringAlert:382 - No Activity from all sensors !!
+2019-11-11 20:20:24 [Thread-1] INFO  MonitoringAlert:383 - *********************************************************************
+2019-11-11 20:21:46 [AWT-EventQueue-0] INFO  MainServerGUI:72 - Server Initialized
+2019-11-11 20:21:46 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:21:46 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:21:46 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:21:46 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:21:46 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:21:46 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:21:47 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:21:47 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:21:47 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:21:47 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:21:47 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:21:47 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:21:47 [AWT-EventQueue-0] INFO  MainServerGUI:97 - Server already launch
+2019-11-11 20:21:48 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:21:48 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:21:48 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:21:48 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:21:48 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:21:48 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:21:49 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:21:49 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:21:49 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:21:49 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:21:49 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:21:49 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:21:49 [AWT-EventQueue-0] INFO  MainServerGUI:122 - Server Stoped
+2019-11-11 20:21:49 [AWT-EventQueue-0] INFO  MainServerGUI:123 - Application closed
+2019-11-11 20:21:50 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:21:50 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:21:50 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:21:50 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:21:50 [Thread-1] INFO  MonitoringAlert:393 - 5 Secondes without messages
+2019-11-11 20:21:50 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:21:50 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:21:51 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:21:51 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:21:51 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:21:51 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:21:51 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:21:51 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:21:52 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:21:52 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:21:52 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:21:52 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:21:52 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:21:52 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:21:53 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:21:53 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:21:53 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:21:53 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:21:53 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:21:53 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:21:54 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:21:54 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:21:54 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:21:54 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:21:54 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:21:54 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:24:29 [AWT-EventQueue-0] INFO  MainServerGUI:72 - Server Initialized
+2019-11-11 20:24:29 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:24:29 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:24:29 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:24:29 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:24:29 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:24:29 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:24:30 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:24:30 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:24:30 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:24:30 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:24:30 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:24:30 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:24:31 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:24:31 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:24:31 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:24:31 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:24:31 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:24:31 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:24:32 [AWT-EventQueue-0] INFO  MainServerGUI:122 - Server Stoped
+2019-11-11 20:24:32 [AWT-EventQueue-0] INFO  MainServerGUI:123 - Application closed
+2019-11-11 20:24:32 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:24:32 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:24:32 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:24:32 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-11 20:24:32 [Thread-1] WARN  SensorDAO:251 - Impossible to get sensor datas from BDD org.postgresql.util.PSQLException
+2019-11-11 20:24:32 [Thread-1] WARN  MonitoringAlert:454 - Impossible to get datas com.fasterxml.jackson.core.JsonParseException
+2019-11-22 12:51:28 [main] INFO  DataSourceTest:139 - All connection are closed 
+2019-11-22 12:51:28 [main] INFO  DataSourceTest:161 - Connection 1 done
+2019-11-22 12:51:28 [main] INFO  DataSourceTest:161 - Connection 2 done
+2019-11-22 12:51:28 [main] INFO  DataSourceTest:161 - Connection 3 done
+2019-11-22 12:51:28 [main] INFO  DataSourceTest:161 - Connection 4 done
+2019-11-22 12:51:28 [main] INFO  DataSourceTest:161 - Connection 5 done
+2019-11-22 12:51:28 [main] INFO  DataSourceTest:161 - Connection 6 done
+2019-11-22 12:51:28 [main] INFO  DataSourceTest:161 - Connection 7 done
+2019-11-22 12:51:28 [main] INFO  DataSourceTest:161 - Connection 8 done
+2019-11-22 12:51:28 [main] INFO  DataSourceTest:161 - Connection 9 done
+2019-11-22 12:51:28 [main] INFO  DataSourceTest:161 - Connection 10 done
+2019-11-22 12:51:28 [main] INFO  DataSourceTest:164 - Limit reached, the pool is saturated java.sql.SQLException
+2019-11-22 12:51:28 [main] INFO  DataSourceTest:122 - Return Connection successful 
+2019-11-22 12:51:28 [main] INFO  DataSourceTest:68 - Data recovery in SGBD successfully 
+2019-11-22 12:51:28 [main] INFO  DataSourceTest:31 - Connection successful 
+2019-11-22 13:34:31 [main] INFO  DataSourceTest:139 - All connection are closed 
+2019-11-22 13:34:31 [main] INFO  DataSourceTest:161 - Connection 1 done
+2019-11-22 13:34:31 [main] INFO  DataSourceTest:161 - Connection 2 done
+2019-11-22 13:34:31 [main] INFO  DataSourceTest:161 - Connection 3 done
+2019-11-22 13:34:31 [main] INFO  DataSourceTest:161 - Connection 4 done
+2019-11-22 13:34:31 [main] INFO  DataSourceTest:161 - Connection 5 done
+2019-11-22 13:34:31 [main] INFO  DataSourceTest:161 - Connection 6 done
+2019-11-22 13:34:31 [main] INFO  DataSourceTest:161 - Connection 7 done
+2019-11-22 13:34:31 [main] INFO  DataSourceTest:161 - Connection 8 done
+2019-11-22 13:34:31 [main] INFO  DataSourceTest:161 - Connection 9 done
+2019-11-22 13:34:31 [main] INFO  DataSourceTest:161 - Connection 10 done
+2019-11-22 13:34:31 [main] INFO  DataSourceTest:164 - Limit reached, the pool is saturated java.sql.SQLException
+2019-11-22 13:34:32 [main] INFO  DataSourceTest:122 - Return Connection successful 
+2019-11-22 13:34:32 [main] INFO  DataSourceTest:68 - Data recovery in SGBD successfully 
+2019-11-22 13:34:32 [main] INFO  DataSourceTest:31 - Connection successful 
+2019-11-23 10:22:25 [main] INFO  DataSourceTest:139 - All connection are closed 
+2019-11-23 10:22:25 [main] INFO  DataSourceTest:161 - Connection 1 done
+2019-11-23 10:22:25 [main] INFO  DataSourceTest:161 - Connection 2 done
+2019-11-23 10:22:25 [main] INFO  DataSourceTest:161 - Connection 3 done
+2019-11-23 10:22:25 [main] INFO  DataSourceTest:161 - Connection 4 done
+2019-11-23 10:22:25 [main] INFO  DataSourceTest:161 - Connection 5 done
+2019-11-23 10:22:25 [main] INFO  DataSourceTest:161 - Connection 6 done
+2019-11-23 10:22:25 [main] INFO  DataSourceTest:161 - Connection 7 done
+2019-11-23 10:22:25 [main] INFO  DataSourceTest:161 - Connection 8 done
+2019-11-23 10:22:25 [main] INFO  DataSourceTest:161 - Connection 9 done
+2019-11-23 10:22:25 [main] INFO  DataSourceTest:161 - Connection 10 done
+2019-11-23 10:22:25 [main] INFO  DataSourceTest:164 - Limit reached, the pool is saturated java.sql.SQLException
+2019-11-23 10:22:25 [main] INFO  DataSourceTest:122 - Return Connection successful 
+2019-11-23 10:22:25 [main] INFO  DataSourceTest:68 - Data recovery in SGBD successfully 
+2019-11-23 10:22:25 [main] INFO  DataSourceTest:31 - Connection successful 
