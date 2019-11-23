@@ -1,0 +1,19 @@
+2019-10-07 09:53:12 [AWT-EventQueue-0] INFO  MainMockGUI:29 - Application Mock runned
+2019-10-07 09:54:09 [AWT-EventQueue-0] WARN  MockSocket:126 - Impossible create the socket java.net.ConnectException
+2019-10-07 09:54:10 [AWT-EventQueue-0] WARN  TabMockMessage:410 - Impossible to parse in JSON Sensor data com.fasterxml.jackson.core.JsonParseException
+2019-10-07 09:54:10 [AWT-EventQueue-0] INFO  TabMockMessage:370 - Generation stopped
+2019-10-07 09:54:10 [AWT-EventQueue-0] INFO  TabMockMessage:370 - Generation stopped
+2019-10-07 09:54:10 [AWT-EventQueue-0] INFO  TabMockMessage:370 - Generation stopped
+2019-10-07 09:54:10 [AWT-EventQueue-0] INFO  TabMockMessage:370 - Generation stopped
+2019-10-07 09:54:12 [AWT-EventQueue-0] INFO  TabMockMessage:370 - Generation stopped
+2019-10-07 10:18:02 [AWT-EventQueue-0] INFO  MainMockGUI:29 - Application Mock runned
+2019-10-07 10:24:38 [AWT-EventQueue-0] INFO  MainMockGUI:29 - Application Mock runned
+2019-10-09 04:52:56 [AWT-EventQueue-0] INFO  MainMockGUI:29 - Application Mock runned
+2019-10-09 04:54:53 [AWT-EventQueue-0] WARN  MockSocket:126 - Impossible create the socket java.net.ConnectException
+2019-10-09 04:54:53 [AWT-EventQueue-0] WARN  TabMockMessage:410 - Impossible to parse in JSON Sensor data com.fasterxml.jackson.core.JsonParseException
+2019-10-09 04:55:44 [AWT-EventQueue-0] WARN  MockSocket:126 - Impossible create the socket java.net.ConnectException
+2019-10-09 04:55:44 [AWT-EventQueue-0] WARN  TabMockMessage:410 - Impossible to parse in JSON Sensor data com.fasterxml.jackson.core.JsonParseException
+2019-10-09 04:56:05 [AWT-EventQueue-0] WARN  MockSocket:126 - Impossible create the socket java.net.ConnectException
+2019-10-09 04:56:05 [AWT-EventQueue-0] WARN  TabMockMessage:410 - Impossible to parse in JSON Sensor data com.fasterxml.jackson.core.JsonParseException
+2019-10-09 04:58:08 [AWT-EventQueue-0] WARN  MockSocket:126 - Impossible create the socket java.net.ConnectException
+2019-10-09 04:58:08 [AWT-EventQueue-0] WARN  TabMockMessage:410 - Impossible to parse in JSON Sensor data com.fasterxml.jackson.core.JsonParseException
