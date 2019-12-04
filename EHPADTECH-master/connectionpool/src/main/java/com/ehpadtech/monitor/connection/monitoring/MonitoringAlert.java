@@ -103,10 +103,10 @@ public class MonitoringAlert {
 
 	/**
 	 * Verify if the messages send by the different sensor can be considerate to an
-	 * alert verify if the threshold have been reached and if they did'nt have an
+	 * alert verify if the threshold have been reached and if they didn't have an
 	 * threshold they use the default threshold of the sensor type then if they
-	 * considerate the messages to an alert they add an alert on alertList to be
-	 * send at Client
+	 * considerate the messages to an alert they add the alert on alertList to be
+	 * send to the Client
 	 */
 	public void alertTreatment() {
 		getAllSensor();
@@ -124,8 +124,8 @@ public class MonitoringAlert {
 				listMessage.removeAll(listMessageInTreatment);
 				nbAlert = 0;
 				/**
-				 * If the threshold are equal to 0 then we affect an default threshold in
-				 * function of the sensor type
+				 * If the threshold are equal to 0 then we affect an default threshold 
+				 * depending on the sensor type
 				 */
 				if (sensors.getThresholdMin() == 0 && sensors.getThresholdMax() == 0) {
 					for (SensorType type : SensorType.values()) {
@@ -143,7 +143,7 @@ public class MonitoringAlert {
 				/**
 				 * If the number of message who reached the sensor threshold, is different to 0
 				 * then we will get a number of message Then the sensitivity and the type of
-				 * sensor is analyze and then we get the properties corresponding And for sensor
+				 * sensor is analyze and then we get the properties corresponding and for sensor
 				 * type Fire the number of message if only the defaultNbOfMessage. And for other
 				 * if the sensor send a message into the time slot they get her proper
 				 * sensitivity
@@ -152,8 +152,8 @@ public class MonitoringAlert {
 					difference = firstAlertDate.getTime() - lastAlertDate.getTime();
 					for (Sensitivity type : Sensitivity.values()) {
 						if (type.equals(sensors.getSensitivity())) {
-							sensitivity = Integer
-									.parseInt(rsAlert.getString(type.name().toLowerCase() + "NbOfAlertMessage"));
+							
+							sensitivity = Integer.parseInt(rsAlert.getString(type.name().toLowerCase() + "NbOfAlertMessage"));
 						}
 					}
 				} else {
@@ -271,7 +271,7 @@ public class MonitoringAlert {
 		/**
 		 * For every sensor on Data base they verify if the sensor is active and if the
 		 * sensor is active they verify if an alert/message send by sensor contain all
-		 * the sensor active if an sensor does'nt have send an alert/message to server
+		 * the sensor active if an sensor does'nt have send any alert/message to server
 		 * they will be considerate to breakdown and we update is state on data base
 		 */
 		getAllSensor();
@@ -363,7 +363,7 @@ public class MonitoringAlert {
 											"*********************************************************************");
 									sensor = new Sensor();
 									sensor.setIdSensor(commonArea.getIdCommonArea());
-									addMessage(9999, sensor);
+									addMessage(0, sensor);
 								}
 							}
 						}
@@ -591,7 +591,7 @@ public class MonitoringAlert {
 						lastAlertDate = messages.getAlertDate();
 						nbAlert++;
 						logger.log(Level.DEBUG,
-								"Sensor : " + sensors.getIdSensor() + " threshold reached : " + messages.getThreshold()
+								"Sensor : " + sensors.getIdSensor() +sensors.getTypeSensor()+ " threshold reached : " + messages.getThreshold()
 										+ ", Min : " + sensors.getThresholdMin() + " Max : "
 										+ sensors.getThresholdMax());
 						lastThreshold = messages.getThreshold();
@@ -605,7 +605,7 @@ public class MonitoringAlert {
 						}
 						lastAlertDate = messages.getAlertDate();
 						nbAlert++;
-						logger.log(Level.DEBUG, "Sensor : " + sensors.getIdSensor() + " threshold reached : "
+						logger.log(Level.DEBUG, "Sensor : " + sensors.getIdSensor() +sensors.getTypeSensor()+ " threshold reached : "
 								+ messages.getThreshold() + ", Max : " + sensors.getThresholdMax());
 						lastThreshold = messages.getThreshold();
 					} else {
